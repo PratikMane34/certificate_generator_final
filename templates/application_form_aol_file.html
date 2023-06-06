@@ -1,0 +1,2185 @@
+
+<!-- Added by Sachin - Access only from India on 18-04-2020 starts here -->
+
+<!-- Added by Sachin - Access only from India on 18-04-2020 ends here -->
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registration</title>
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<meta name="viewport" content="width=device-width">
+		<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link href="css/bootstrap-datepicker.css" rel="stylesheet" type="text/css"/>
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+    	<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+    	<link rel="stylesheet" name="skins" href="css/jquery.auto-complete.css" type="text/css" media="all">
+    	<!-- STYLE CSS -->
+    	<link rel="stylesheet" href="css/custom.css?version=5">
+    	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+
+
+		<!-- Google Tag Manager -->
+				<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-N2J496');</script>
+				<!-- End Google Tag Manager -->
+
+		<!-- Start VWO Asynchronous Code --> <!-- Added by Sachin - CRFUAT-4361 on 24-06-2019  -->
+		<script type='text/javascript'>
+		var _vwo_code=(function(){
+		var account_id=243872,
+		settings_tolerance=2000,
+		library_tolerance=2500,
+		use_existing_jquery=false,
+		/* DO NOT EDIT BELOW THIS LINE */
+		f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+		</script>
+		<!-- End VWO Asynchronous Code -->
+
+		<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-analytics.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-performance.js"></script>
+
+		<!--Start of Tawk.to Script-->
+		<!-- <script type="text/javascript">
+		var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+		(function(){
+		var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+		s1.async=true;
+		s1.src='https://embed.tawk.to/5ea2e1f069e9320caac6f011/default';
+		s1.charset='UTF-8';
+		s1.setAttribute('crossorigin','*');
+		s0.parentNode.insertBefore(s1,s0);
+		})();
+		</script> -->
+		<!--End of Tawk.to Script-->
+		<script type="text/javascript">
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-25805165-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
+
+	</head>
+	<body>
+
+		<div id="loading">
+			<img id="loading-image" src="img/loading.gif" alt="Loading..." />
+		</div>
+
+		<div class="row m-r-0 m-l-0">
+			<div class="col-sm-12 col-lg-3 info-block">
+	        	<div class="full-height">
+	            <div class="row">
+	            	<div class="col-sm-12 col-md-12 col-lg-12 m-t-15 pr-info">
+	                	<center><img class="logo" src="img/logo.png" alt=""></center>
+	            	</div>
+	            	<div class="col-sm-12 col-md-12 col-lg-12 m-t-30 pr-info">
+	                	<center><h5 class="info-title">Program Information</h5></center>
+	            	</div>
+	            	<div class="col-12 col-sm-12 col-md-12 col-lg-12 m-t-20 pr-info">
+	            		<center><img src="img/program.png" class="info-img1" /></center>
+	            		<center>
+	            			<span class="card-text">
+	                            <div id="course_event_type"></div>
+	                            <div id="lang_display"></div>
+	                            <div id="amount_display"></div>
+	                        </span>
+	                    </center>
+	            	</div>
+	            	<div class="col-12 col-sm-12 col-md-12 col-lg-12 m-t-20 more-details">
+	            		<center><img src="img/teacher.png" class="info-img2" /></center>
+	            		<center>
+	            			<span class="card-text">
+	                            <div id="e_address"></div>
+	                        </span>
+	                    </center>
+	            	</div>
+	            	<div class="col-12 col-sm-12 col-md-12 col-lg-12 m-t-20 more-details" id="date_time_header_div">
+	            		<center><img src="img/calendar.png" class="info-img2" /></center>
+	            		<center>
+	            			<span class="card-text">
+	                            <div id="e_date"></div>
+	                            <div class="small-bold" id="week_day_t">
+								</div>
+								<div class="small-bold" id="week_end_t">
+								</div>
+	                        </span>
+	                	</center>
+	            	</div>
+
+	            	<div class="col-12 col-sm-12 col-md-12 col-lg-12 m-t-20 more-details">
+	            		<center><img src="img/poc.png" class="info-img4" /></center>
+	            		<center>
+	            			<span class="card-text">
+	                            <div id="e_contact" class="wrap-word-cus"></div>
+	                        </span>
+	                    </center>
+	            	</div>
+	            	<div class="col-12 col-sm-12 col-md-12 col-lg-12 hide" id="expand-icon">
+		            	<center id="expand-button">
+
+		            		<!-- <img src="img/arrow-down.gif" class="change-icon" id="arrow-down" data-toggle="collapse" aria-controls="more-details" href=".more-details" title="More Details" >
+		            		<img src="img/arrow-up.gif" class="change-icon hide" id="arrow-up" data-toggle="collapse" aria-controls="more-details" href=".more-details" title="More Details" > -->
+	                    	<span id="btn-with-icon"><i class="bi bi-chevron-down" data-toggle="collapse" aria-controls="more-details" href=".more-details" title="More Details" id="change-icon"></i>
+	                    	</span>
+	                    </center>
+	                </div>
+	            </div>
+	        	</div>
+	        </div>
+	        <div class="col-sm-12 col-lg-6">
+
+	        	<input type="hidden" name="url_event_type_id" id="url_event_type_id" value="59">
+	            <form action="pg/pgRedirect.php" method="POST" name="online_reg_form" id="online_reg_form" class="hide collapseOne">
+
+
+	            	<input type="hidden" name="payment_attempted_continue" id="payment_attempted_continue" value="0"><!-- // Added by Senthil - CRFUAT-6875 on 2-6-22 -->
+
+	            	<input type="hidden" name="http_referer" id="http_referer" value=""><!-- Added by Sachin - CRFUAT-4171 on 04-04-2019 -->
+
+					<input type="hidden" name="http_first_landing_page" id="http_first_landing_page" value=""><!-- Added by Senthil - CRFUAT-6637 on 21-03-2022 -->
+
+					<!-- added by senthil 6865 28-6-22 start -->
+					<input type="hidden" name="url_reg_type" id="url_reg_type" value="">
+					<input type="hidden" name="reg_type_status" id="reg_type_status" value="">
+					<!--added by senthil 6865 28-6-22 end -->
+
+
+					<input type="hidden" name="course_registration_page" id="course_registration_page" value="1">
+					<input type="hidden" name="promo_code_id" id="promo_code_id" value="0">
+					<!-- added by jaya 5410 25 aug 2020 start -->
+					<input type="hidden" name="prgname" id="prgname" value=""><!-- added by jaya 6175 13 aug 2021 -->
+
+
+					<!--added by senthil 7389 start-->
+					<input type="hidden" name="JSC_Txn_token" id="JSC_Txn_token" value="">
+					<input type="hidden" name="JSC_Order_id" id="JSC_Order_id" value="">
+					<input type="hidden" name="JSC_Txn_amount" id="JSC_Txn_amount" value="">
+					<!--added by senthil 7389 end-->
+
+					<div id="basicwizard">
+					<div class="steps clearfix">
+						<span id="tab_title">Personal Details</span>
+			            <ul>
+			                <li class="nav-item nav-button first checked" id="head1">
+			                    <a href="#tab1" class="tab-link" data-toggle="tab" id="tab-link1">
+
+			                    </a>
+			                </li>
+			                <li class="nav-item  nav-button" id="head2">
+			                    <a href="#tab2" class="tab-link" data-toggle="tab" id="tab-link2">
+
+			                    </a>
+			                </li>
+			                <li class="nav-item nav-button" id="head3">
+			                    <a href="#tab3" class="tab-link" data-toggle="tab" id="tab-link3">
+
+			                    </a>
+			                </li>
+			                <li class="nav-item nav-button" id="head4">
+			                    <a href="#tab4" class="tab-link" data-toggle="tab" id="tab-link4">
+
+			                    </a>
+			                </li>
+			                <!-- <li class="nav-item nav-button last" id="head5">
+			                    <a href="#tab5" class="tab-link" data-toggle="tab" id="tab-link5">
+
+			                    </a>
+			                </li> -->
+			            </ul>
+			        </div>
+
+		            <div class="tab-content b-0 mb-0">
+
+		                <div class="tab-pane" id="tab1">
+	                    	<div class="form-row form-group" id="shaaj_note" style="display: none;">
+	                    		<div class="col-sm-12">
+									<span >Note: If you have already done this program once, you need not register again. Contact your Sahaj teacher for the follow up session.</span>
+								</div>
+							</div>
+							<div class="form-row form-group teacher_special_course_div_show">
+	                            <div class="col-sm-12">
+	                            	<label for="teacher_code">
+	                                    Teacher Code *
+	                                </label>
+	                                <input type="text" class="form-control input-element" id="teacher_code" name="teacher_code" maxlength="10">
+	                            </div>
+	                        </div>
+	                        <div class="form-row form-group name-block">
+	                            <div class="col-sm-6">
+	                                <label for="first_name">
+	                                    First Name *
+	                                </label>
+	                                <input type="text" class="form-control input-element" id="first_name" name="first_name">
+	      							<span class="error_display" id="first_name_err"></span>
+	                            </div>
+	                            <div class="col-sm-2" style="display: none;">
+					      			<input type="text" class="form-control input-element" id="middle_name" name="middle_name" placeholder="Middle Name">
+					      			<span class="error_display" id="middle_name_err"></span>
+					    		</div>
+	                            <div class="col-sm-6">
+	                                <label for="last_name">
+	                                    Last Name *
+	                                </label>
+	                                <input type="text" class="form-control input-element" id="last_name" name="last_name">
+	      							<span class="error_display" id="last_name_err"></span>
+	                            </div>
+	                        </div>
+	                        <div class="form-row form-group pax-mobile-block teacher_special_course_div">
+	                            <div class="col-sm-12">
+	                                <label for="participant_phone">
+	                                    Mobile *
+	                                </label>
+	                                <input type="text" class="form-control input-element" id="participant_phone" name="participant_phone" maxlength="10">
+	      							<span class="error_display" id="participant_phone_err"></span>
+	                            </div>
+	                        </div>
+	                        <div class="form-row form-group pax-email-block teacher_special_course_div">
+	                            <div class="col-sm-12">
+	                                <label for="participant_email">
+	                                    Email * <span style="display: none; " id="email_verified_icon" class="bi bi-check-lg" title="Verified"></span>
+	                                </label>
+	                                <input type="text" class="form-control input-element" id="participant_email" name="participant_email" maxlength="200">
+	                                <button style="display: none;" class="btn btn-sm" type="button" id="validate_email" >Validate</button>
+
+					      			<span id="py_help_text" class="mt-5px">Program Material will be sent on this Email ID</span><!-- added by jaya crfuat-4729 24 Oct 2019 -->
+					      			<span class="error_display" id="participant_email_err"></span>
+	                            </div>
+	                        </div>
+	                        <div class="form-row form-group" id="email_otp_block" style="display: none;">
+	                            <div class="col-sm-12">
+	                                <label for="email_otp">
+	                                    Email OTP *
+	                                </label>
+	                                <input type="text" class="form-control input-element" id="email_otp" name="email_otp" maxlength="4">
+	                                <button style="" class="btn btn-sm" type="button" id="verify_email_otp" >Verify OTP</button>
+					      			<span class="error_display" id="email_otp_err"></span>
+	                            </div>
+	                        </div>
+
+	                        
+	                        <div class="form-row">
+
+	                            <div class="col-sm-6">
+	                                <label for="">
+	                                    DOB *
+	                                </label>
+	                                <div class="dlk-radio btn-group height-25">
+	                                
+			    					<label class="btn btn-sm height-25 dob-sel btn-ylw" id="dob-sec">
+									    <input name="dobORage" class="form-control cus-radio" type="radio" value="0" checked="checked"><span class="dob-labels">DOB</span>
+									</label>
+
+			    					<label class="btn btn-sm height-25 dob-sel"  id="age-sec">
+									    <input name="dobORage" class="form-control cus-radio" type="radio" value="1"><span class="dob-labels">Age</span>
+								    </label>
+												    					</div>
+	                            </div>
+
+	                            <div class="col-sm-6" id="dob_col">
+	                            	<label for="participant_email" aria-disabled="true">
+
+	                                </label>
+	                            	
+								<div class='date' id="datepicker">
+				      				<input type='text' placeholder="Select DOB" autocomplete="off" class="form-control input-element" id="dob" name="dob" readonly="readonly" />
+				      				<span class="input-group-addon hide">
+				                        <span class="glyphicon glyphicon-calendar"></span>
+				                    </span>
+				      			</div>
+
+								
+								<input type="number" placeholder="Age" min="1" class="form-control input-element" id="age" name="age" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.min;">
+	      						<span class="error_display" id="dob_err"></span>
+
+	                            </div>
+
+	                        </div>
+
+	                        <div class="form-row">
+	                            <div class="col-sm-12 gender-block" id="genderBlock">
+	                                <label for="">
+	                                    Gender *
+	                                </label>
+	                                <div class="form-check form-check-inline">
+									  <input class="form-check-input gender_class cus-radio" type="radio" name="gender" id="CIVICRM_QFID_1_6" value="1">
+									  <label class="form-check-label" for="CIVICRM_QFID_1_6">Female</label>
+									</div>
+									<div class="form-check form-check-inline">
+									  <input class="form-check-input gender_class cus-radio" type="radio" name="gender" id="CIVICRM_QFID_2_8" value="2">
+									  <label class="form-check-label" for="CIVICRM_QFID_2_8">Male</label>
+									</div>
+									<div class="form-check form-check-inline">
+									  <input class="form-check-input gender_class cus-radio" type="radio" name="gender" id="CIVICRM_QFID_2_10" value="3">
+									  <label class="form-check-label" for="CIVICRM_QFID_2_10">Others</label>
+									</div><br/>
+									<span class="error_display" id="gender_err"></span>
+
+	                            </div>
+	                        </div>
+
+	                        
+	                        <div id="showparentfields">
+		                        <div class="form-row parent-name-block" >
+		                        	<div class="col-sm-6">
+		                                <label for="parent_first_name">
+		                                    Parent/Guardian First Name *
+		                                </label>
+		                                <input type="text" class="form-control input-element" id="parent_first_name" name="parent_first_name">
+		      							<span class="error_display" id="parent_fisrt_name_err"></span>
+		                            </div>
+		                            <div class="col-sm-2" style="display: none;">
+						      			<input type="text" class="form-control input-element" id="parent_middle_name" name="parent_middle_name">
+						      			<span class="error_display" id="parent_middle_name_err"></span>
+						    		</div>
+		                            <div class="col-sm-6">
+		                                <label for="parent_last_name">
+		                                    Parent/Guardian Last Name *
+		                                </label>
+		                                <input type="text" class="form-control input-element" id="parent_last_name" name="parent_last_name">
+		      							<span class="error_display" id="parent_last_name_err"></span>
+		                            </div>
+		                        </div>
+		                        <div class="form-row parent-mobile-block" >
+		                        	<div class="col-sm-12">
+		                                <label for="phone">
+		                                    Parent/Guardian Mobile *
+		                                </label>
+		                                <input type="text" class="form-control input-element" id="phone" name="phone" maxlength="10">
+		      							<span class="error_display" id="phone_err"></span>
+		      							<label class="checkbox-inline mt-5px"><input type="checkbox" value="second_checkbox" id="parent_phone_checkbox"> Same as Participant Mobile</label>
+		                            </div>
+		                        </div>
+
+		                        <!-- code starts here Gopi 7128 -->
+		                     <div class="form-row parent-email-block" >
+		                            <div class="col-sm-12">
+		                                <label for="email">
+		                                    Parent/Guardian Email *
+		                                </label>
+		                                <input type="text" class="form-control input-element" id="email" name="email" maxlength="200">
+		      							<span class="error_display" id="email_err"></span>
+		      							<label class="checkbox-inline mt-5px"><input type="checkbox" value="second_checkbox" id="parent_email_checkbox"> Same as Participant Email</label>
+		                            </div>
+		                        </div>
+	                    	</div>
+	                    	<!-- code end here Gopi CRFUAT-7128 -->
+
+	                    	
+
+	                    	<div class="form-row form-group">
+	                            <div class="col-sm-12">
+	                                <div class="form-check">
+										<input class="form-check-input" type="checkbox" name="recive_info" id="recive_info" checked="checked" value="1">
+										<label class="form-check-label" for="recive_info">
+										    I agree to receive information from The Art of Living and its affiliate organizations through various media, including print and digital, with a facility to opt out.
+										</label>
+									</div>
+	                            </div>
+							</div>
+
+							
+	                    </div>
+
+	                    <!-- SECTION 2 -->
+	                	<div class="tab-pane" id="tab2">
+	                		<span id="full-address-block" class="teacher_special_course_div">
+		                		<div class="form-row pincode-block" id="pin_code_block">
+			                        <div class="col-sm-6">
+			                        	<label for="pincode">
+		                                    Postal Code *
+		                                </label>
+		                                <input type="text" class="form-control input-element" id="pincode" name="pincode" maxlength="6" size="6">
+		                                <span class="" id="pincode_info"></span>
+		      							<span class="error_display" id="pincode_err"></span>
+			                        </div>
+			                    </div>
+			                    <div class="form-row hno-block" id="house_no_block">
+			                        <div class="col-sm-12">
+			                        	<label for="house_no">
+		                                    Address *
+		                                </label>
+		                                <input type="text" class="form-control input-element" id="house_no" name="house_no" maxlength="255">
+		      							<span class="error_display" id="house_no_err"></span>
+			                        </div>
+			                    </div>
+
+			                    <span id="address_block_1">
+			                    	<div class="form-row city-block1">
+				                        <div class="col-sm-12">
+				                        	<label for="city">
+			                                    City/Town/Village *
+			                                </label>
+			                                <div class="autocomplete">
+										    	<input id="city" type="text" name="city" placeholder="Search City/Town/Village..." class="form-control input-element"  autocomplete="off" maxlength="96">
+											</div>
+			      							<span class="error_display" id="city_err"></span>
+				                        </div>
+				                    </div>
+			                    </span>
+
+			                    <span id="address_block_2" class="hide">
+				                    <div class="form-row state-block">
+				                        <div class="col-sm-12">
+				                        	<label for="state_id">
+			                                    State *
+			                                </label>
+			                                <div class="form-holder">
+				                                <select class="form-control select-style" id="state_id" name="state_id" data-container="body">
+												</select>
+											</div>
+			      							<span class="error_display" id="state_id_err"></span>
+				                        </div>
+				                    </div>
+				                    <div class="form-row district-block">
+				                        <div class="col-sm-12">
+				                        	<label for="district_id">
+			                                    District *
+			                                </label>
+			                                <div class="form-holder">
+				                                <select class="form-control select-style" id="district_id" name="district_id" data-container="body">
+				                                	<option value="0">Select</option>
+												</select>
+											</div>
+			      							<span class="error_display" id="district_id_err"></span>
+				                        </div>
+				                    </div>
+				                    <div class="form-row city-block">
+				                        <div class="col-sm-12">
+				                        	<label for="city_name">
+			                                    City/Town/Village *
+			                                </label>
+			                                <div class="autocomplete">
+										    	<input id="city_name" type="text" name="city_name" placeholder="Search City/Town/Village..." class="form-control input-element"  autocomplete="off" maxlength="96">
+											</div>
+			      							<span class="error_display" id="city_name_err"></span>
+				                        </div>
+				                    </div>
+			                    </span>
+		                	</span>
+	                	</div>
+
+	                	<!-- SECTION 3 -->
+	                	<div class="tab-pane" id="tab3">
+	                		<div class="tab3-content form-row form-group occupation-block" id="occupation_details_block" style="display: none;">
+	                            <div class="col-sm-12">
+	                            	<label for="occupation">
+	                                    Occupation *
+	                                </label>
+	                                <input type="text" class="form-control input-element" id="occupation" name="occupation" maxlength="100">
+	                                <span class="error_display" id="occupation_err"></span>
+	                            </div>
+	                        </div>
+	                        <span class="tab3-content" id="profession_details_block" style="display: none;">
+	                        	<div class="form-row form-group">
+		                            <div class="col-sm-12 occupation-id-block">
+		                            	<label for="occupation_id">
+		                                    Professional Licence Number / Employee ID (Upload its photo/scan)
+		                                </label>
+		                                <input type="text" class="form-control input-element" id="occupation_id" name="occupation_id" maxlength="100">
+		                                <span class="error_display" id="occupation_id_err"></span>
+		                            </div>
+		                            <div class="col-sm-12  occupation-id-file-block">
+		                            	<label for="occupation_id_file">
+		                                </label>
+		                                <input type="file" class="form-control-file input-element" id="occupation_id_file" name="occupation_id_file" title="Upload Soft Copy of Professional Licence / Employee ID">
+		      							<span class="error_display" id="occupation_id_file_err"></span>
+		                            </div>
+		                        </div>
+	                        </span>
+	                        <span class="tab3-content" id="ssiast_org_block">
+	                        	<div class="form-row form-group">
+		                        	<div class="col-sm-12  agricultural_background-block">
+		                            	<label for="agricultural_background">
+		                            		Agricultural Background *
+		                                </label>
+		                                <input id="agricultural_background" type="text" name="agricultural_background" maxlenth="250" class="form-control input-element" >
+										<span class="error_display" id="agricultural_background_err"></span>
+		                            </div>
+		                        </div>
+		                        <div class="form-row form-group">
+		                            <div class="col-sm-12  purpose_of_doing_this_program-block">
+		                            	<label for="purpose_of_doing_this_program">
+		                            		Purpose of Doing This Program *
+		                                </label>
+		                                <input id="purpose_of_doing_this_program" type="text" name="purpose_of_doing_this_program" maxlenth="250" class="form-control input-element" >
+										<span class="error_display" id="purpose_of_doing_this_program_err"></span>
+		                            </div>
+		                        </div>
+	                        </span>
+
+	                        <span class="tab3-content" id="health_block_kids" style="display: none;">
+	                        	<div class="form-row form-group medicalhistory-block">
+		                        	<div class="col-sm-12">
+		                                <label for="">
+		                                    Current Medical history of child / Learning disabilities (if any)? *
+		                                </label>
+		                                <div class="form-check form-check-inline">
+										  <input class="form-check-input cus-radio" type="radio" name="medicalhistory" id="medicalhistory_yes" value="1">
+										  <label class="form-check-label" for="medicalhistory_yes">Yes</label>
+										</div>
+										<div class="form-check form-check-inline">
+										  <input class="form-check-input cus-radio" type="radio" name="medicalhistory" id="medicalhistory_no" value="2">
+										  <label class="form-check-label" for="medicalhistory_no">No</label>
+										</div>
+										<span class="error_display" id="medicalhistory_err"></span>
+		                            </div>
+	                        	</div>
+	                        	<div class="form-row form-group medicalhistory-des-block" style="display: none;">
+	                            	<div class="col-sm-12 medicalhistory-block">
+	                            		<label for="medicalhistory_des">
+		                            		Please mention Medical history details *
+		                                </label>
+		                                <input id="medicalhistory_des" type="text" name="medicalhistory_des" maxlenth="250" class="form-control input-element" >
+										<span class="error_display" id="medicalhistory_des_err"></span>
+	                            	</div>
+	                            </div>
+	                            <div class="form-row form-group medication-block-kid">
+		                        	<div class="col-sm-12">
+		                                <label for="">
+		                                    Current Medications (if any) ? *
+		                                </label>
+		                                <div class="form-check form-check-inline">
+										  <input class="form-check-input cus-radio" type="radio" name="medication_kid" id="medication_kid_yes" value="1">
+										  <label class="form-check-label" for="medication_kid_yes">Yes</label>
+										</div>
+										<div class="form-check form-check-inline">
+										  <input class="form-check-input cus-radio" type="radio" name="medication_kid" id="medication_kid_no" value="2">
+										  <label class="form-check-label" for="medication_kid_no">No</label>
+										</div>
+										<span class="error_display" id="medication_kid_err"></span>
+		                            </div>
+	                        	</div>
+	                        	<div class="form-row form-group medication-des-block-kid" style="display: none;">
+	                            	<div class="col-sm-12 medicalhistory-block">
+	                            		<label for="medication_des_kid">
+		                            		Please mention prescribed medication details *
+		                                </label>
+		                                <input id="medication_des_kid" type="text" name="medication_des_kid" maxlenth="250" class="form-control input-element" >
+										<span class="error_display" id="medication_des_kid_err"></span>
+	                            	</div>
+	                            </div>
+	                        </span>
+
+	                        <span class="tab3-content" id="course_history_block">
+	                        	<div class="form-row form-group hlp_other_prg">
+	                        		<div class="col-sm-12">
+	                        			<p class="control-label col-sm-12" for="completed_basic_course" id="course_history_text">To attend the <span id="history_ct_name"> Advanced Meditation Program (AMP)</span>, you need to have completed any one of the following qualifying Art of Living programs: <span id="hlp_program_list_by_program_ids">Happiness Program (HP), HP for Youth (HPY), YESplus, Student Excellence & Learning Program (SELP), Rural Happiness Program, YLTP, Workshop to get Rid of Anxiety & Sleep Disorder.</span> </p><!-- test modified by jaya 5071 17 Dec 2020 -->
+	                        			<!-- id hlp_program_list_by_program_ids added by sekar 7271 -->
+	                        		</div>
+	                        	</div>
+	                        	<!-- blessing program added by sekar m on aug 26 start-->
+	                        	<div class="form-row form-group hlp_blessing_prg d-none">
+	                        		<div class="col-sm-12">
+	                        			<p class="control-label col-sm-12" for="completed_basic_course" id="course_history_text">To attend the <span id="history_ct_name">Blessing Course</span>, you need to have completed the following qualifying Art of Living programs:
+	                        			<p class="control-label col-sm-12">2- Part 2 Programs / Advance Meditation Programs (AMP) and Sahaj Samadhi Dhyan Yoga</p>
+	                        		</div>
+	                        	</div>
+	                        	<!-- blessing program added by sekar m on aug 26 end -->
+	                        	<div class="form-row form-group course-question-block ">
+	                        		<div class="col-sm-12">
+		                                <label for="" id="havecomplete_history_qus">
+		                                    Have you completed any one of the above programs? *
+		                                </label>
+		                                <div class="form-check form-check-inline">
+										  <input class="form-check-input cus-radio" type="radio" name="completed_basic_course" id="completed_basic_course_yes" value="1">
+										  <label class="form-check-label" for="completed_basic_course_yes">Yes</label>
+										</div>
+										<div class="form-check form-check-inline">
+										  <input class="form-check-input cus-radio" type="radio" name="completed_basic_course" id="completed_basic_course_no" value="2">
+										  <label class="form-check-label" for="completed_basic_course_no">No</label>
+										</div><br/>
+										<span class="error_display" id="course_history_err"></span>
+		                            </div>
+	                        	</div>
+	                        	<div class="form-row form-group course_history_data program-block hlp_other_prg">
+	                        		<div class="col-sm-12">
+			                        	<label for="course_history_type">
+		                                    Which Program? *
+		                                </label>
+		                                <div class="form-holder">
+			                                <select class="form-control select-style" id="course_history_type" name="course_history_type" data-container="body">
+			                                	<option value="">Select</option>
+											    <option value="531">Happiness Program</option>
+											    <option value="599">Happiness Program For Youth</option>
+											    <option value="20">YES!+</option>
+											    <option value="662">Student Excellence & Learning Program (SELP)</option>
+											    <option value="721">Workshop to get Rid of Anxiety & Sleep Disorder</option><!-- added by jaya 5071 17 Dec 2020 -->
+											    <option value="111">Rural Happiness Program</option><!-- added by senthil 6841 18-5-22 -->
+											    <option value="59">YLTP</option><!-- added by senthil 6841 18-5-22-->
+											</select>
+										</div>
+		      							<span class="error_display" id="course_history_type_err"></span>
+			                        </div>
+	                        	</div>
+	                        	<div class="form-row form-group course_history_data program-date-block hlp_other_prg">
+	                        		<div class="col-sm-6">
+			                        	<label for="course_month">
+		                                    Month? *
+		                                </label>
+		                                <div class="form-holder">
+			                                <select class="form-control select-style" id="course_month" name="course_month" data-container="body">
+			                                	<option value="">Select Month</option>
+											    <option value="1">Jan</option>
+											    <option value="2">Feb</option>
+											    <option value="3">Mar</option>
+											    <option value="4">Apr</option>
+											    <option value="5">May</option>
+											    <option value="6">Jun</option>
+											    <option value="7">Jul</option>
+											    <option value="8">Aug</option>
+											    <option value="9">Sep</option>
+											    <option value="10">Oct</option>
+											    <option value="11">Nov</option>
+											    <option value="12">Dec</option>
+											</select>
+										</div>
+		      							<span class="error_display" id="course_month_err"></span>
+			                        </div>
+			                        <div class="col-sm-6">
+	                            		<label for="course_year">
+		                            		Year? *
+		                                </label>
+		                                <input id="course_year" type="text" name="course_year" maxlenth="4" class="form-control input-element" >
+										<span class="error_display" id="course_year_err"></span>
+	                            	</div>
+	                        	</div>
+	                        	<div class="form-row form-group course_history_data  hlp_other_prg">
+	                        		<div class="col-sm-6 where-block">
+	                            		<label for="course_location">
+		                            		Where? *
+		                                </label>
+		                                <input type="text" class="form-control input-element" id="course_location" name="course_location" placeholder="Place of Program ">
+		      							<span class="error_display" id="course_location_err"></span>
+	                            	</div>
+	                            	<div class="col-sm-6 who-block">
+	                            		<label for="course_teacher">
+		                            		Who was your Program Teacher *
+		                                </label>
+		                                <input type="text" class="form-control input-element" id="course_teacher" name="course_teacher" placeholder="Teacher Name/Code">
+		      							<span class="error_display" id="course_teacher_err"></span>
+	                            	</div>
+	                        	</div>
+	                        	<!-- blessing program added by sekar m on aug 26 -->
+
+
+	                        	<div class="form-row form-group course_history_data program-block hlp_blessing_prg d-none">
+	                        		<div class="col-sm-12">
+			                        	<label >
+		                                    Part 2/AMP/Rural Part 2 - First Program Details? *
+		                                </label>
+
+			                        </div>
+	                        	</div>
+	                        	<div class="form-row form-group course_history_data program-date-block hlp_blessing_prg ">
+	                        		<div class="col-sm-6">
+			                        	<label for="course_month">
+		                                    Month? *
+		                                </label>
+		                                <div class="form-holder">
+
+		                                	<input type="hidden" name="bl_course_history_type[]" id="course_history_type_1" value="2">
+		                                	<input type="hidden" name="bl_exist_course_history_type[]" id="exist_course_history_type_1" value="2">
+			                                <select class="form-control select-style" id="course_month_1" name="bl_course_month[]" data-container="body">
+			                                	<option value="">Select Month</option>
+											    <option value="1">Jan</option>
+											    <option value="2">Feb</option>
+											    <option value="3">Mar</option>
+											    <option value="4">Apr</option>
+											    <option value="5">May</option>
+											    <option value="6">Jun</option>
+											    <option value="7">Jul</option>
+											    <option value="8">Aug</option>
+											    <option value="9">Sep</option>
+											    <option value="10">Oct</option>
+											    <option value="11">Nov</option>
+											    <option value="12">Dec</option>
+											</select>
+										</div>
+		      							<span class="error_display" id="course_month_err1"></span>
+			                        </div>
+			                        <div class="col-sm-6">
+	                            		<label for="course_year">
+		                            		Year? *
+		                                </label>
+		                                <input id="course_year_1" type="text" name="bl_course_year[]" maxlenth="4" class="form-control input-element" >
+										<span class="error_display" id="course_year_err1"></span>
+	                            	</div>
+	                        	</div>
+	                        	<div class="form-row form-group course_history_data hlp_blessing_prg ">
+	                        		<div class="col-sm-6 where-block">
+	                            		<label for="course_location">
+		                            		Where? *
+		                                </label>
+		                                <input type="text" class="form-control input-element" id="course_location_1" name="bl_course_location[]" placeholder="Place of Program">
+		      							<span class="error_display" id="course_location_err1"></span>
+	                            	</div>
+	                            	<div class="col-sm-6 who-block">
+	                            		<label for="course_teacher">
+		                            		Program Teacher *
+		                                </label>
+		                                <input type="text" class="form-control input-element" id="course_teacher_1" name="bl_course_teacher[]" placeholder="Teacher Name/Code">
+		      							<span class="error_display" id="course_teacher_err1"></span>
+	                            	</div>
+	                        	</div>
+	                        	<!-- second program -->
+	                        	<div class="form-row form-group course_history_data program-block hlp_blessing_prg ">
+	                        		<div class="col-sm-12">
+			                        	<label >
+		                                    Part 2/AMP/Rural Part 2 - Second Program Details? *
+		                                </label>
+
+			                        </div>
+	                        	</div>
+	                        	<div class="form-row form-group course_history_data program-date-block hlp_blessing_prg ">
+	                        		<div class="col-sm-6">
+			                        	<label for="course_month">
+		                                    Month? *
+		                                </label>
+		                                <div class="form-holder">
+		                                	<input type="hidden" name="bl_course_history_type[]" id="course_history_type_2" value="2">
+		                                	<input type="hidden" name="bl_exist_course_history_type[]" id="exist_course_history_type_2" value="2">
+			                                <select class="form-control select-style" id="course_month_2" name="bl_course_month[]" data-container="body">
+			                                	<option value="">Select Month</option>
+											    <option value="1">Jan</option>
+											    <option value="2">Feb</option>
+											    <option value="3">Mar</option>
+											    <option value="4">Apr</option>
+											    <option value="5">May</option>
+											    <option value="6">Jun</option>
+											    <option value="7">Jul</option>
+											    <option value="8">Aug</option>
+											    <option value="9">Sep</option>
+											    <option value="10">Oct</option>
+											    <option value="11">Nov</option>
+											    <option value="12">Dec</option>
+											</select>
+										</div>
+		      							<span class="error_display" id="course_month_err2"></span>
+			                        </div>
+			                        <div class="col-sm-6">
+	                            		<label for="course_year">
+		                            		Year? *
+		                                </label>
+		                                <input id="course_year_2" type="text" name="bl_course_year[]" maxlenth="4" class="form-control input-element" >
+										<span class="error_display" id="course_year_err2"></span>
+	                            	</div>
+	                        	</div>
+	                        	<div class="form-row form-group course_history_data hlp_blessing_prg ">
+	                        		<div class="col-sm-6 where-block">
+	                            		<label for="course_location">
+		                            		Where? *
+		                                </label>
+		                                <input type="text" class="form-control input-element" id="course_location_2" name="bl_course_location[]" placeholder="Place of Program">
+		      							<span class="error_display" id="course_location_err2"></span>
+	                            	</div>
+	                            	<div class="col-sm-6 who-block">
+	                            		<label for="course_teacher">
+		                            		Program Teacher *
+		                                </label>
+		                                <input type="text" class="form-control input-element" id="course_teacher_2" name="bl_course_teacher[]" placeholder="Teacher Name/Code">
+		      							<span class="error_display" id="course_teacher_err2"></span>
+	                            	</div>
+	                        	</div>
+
+	                        	<!-- Third program -->
+	                        	<div class="form-row form-group course_history_data program-block hlp_blessing_prg ">
+	                        		<div class="col-sm-12">
+			                        	<label >
+		                                    Sahaj Samandhi Dhyam Yoga Program Details? *
+		                                </label>
+
+			                        </div>
+	                        	</div>
+	                        	<div class="form-row form-group course_history_data program-date-block hlp_blessing_prg ">
+	                        		<div class="col-sm-6">
+			                        	<label for="course_month">
+		                                    Month? *
+		                                </label>
+		                                <div class="form-holder">
+		                                	<input type="hidden" name="bl_course_history_type[]" id="course_history_type_3" value="3">
+		                                	<input type="hidden" name="bl_exist_course_history_type[]" id="exist_course_history_type_3" value="3">
+			                                <select class="form-control select-style" id="course_month_3" name="bl_course_month[]" data-container="body">
+			                                	<option value="">Select Month</option>
+											    <option value="1">Jan</option>
+											    <option value="2">Feb</option>
+											    <option value="3">Mar</option>
+											    <option value="4">Apr</option>
+											    <option value="5">May</option>
+											    <option value="6">Jun</option>
+											    <option value="7">Jul</option>
+											    <option value="8">Aug</option>
+											    <option value="9">Sep</option>
+											    <option value="10">Oct</option>
+											    <option value="11">Nov</option>
+											    <option value="12">Dec</option>
+											</select>
+										</div>
+		      							<span class="error_display" id="course_month_err3"></span>
+			                        </div>
+			                        <div class="col-sm-6">
+	                            		<label for="course_year">
+		                            		Year? *
+		                                </label>
+		                                <input id="course_year_3" type="text" name="bl_course_year[]" maxlenth="4" class="form-control input-element" >
+										<span class="error_display" id="course_year_err3"></span>
+	                            	</div>
+	                        	</div>
+	                        	<div class="form-row form-group course_history_data hlp_blessing_prg ">
+	                        		<div class="col-sm-6 where-block">
+	                            		<label for="course_location">
+		                            		Where? *
+		                                </label>
+		                                <input type="text" class="form-control input-element" id="course_location_3" name="bl_course_location[]" placeholder="Place of Program">
+		      							<span class="error_display" id="course_location_err3"></span>
+	                            	</div>
+	                            	<div class="col-sm-6 who-block">
+	                            		<label for="course_teacher">
+		                            		Program Teacher *
+		                                </label>
+		                                <input type="text" class="form-control input-element" id="course_teacher_3" name="bl_course_teacher[]" placeholder="Teacher Name/Code">
+		      							<span class="error_display" id="course_teacher_err3"></span>
+	                            	</div>
+	                        	</div>
+	                        </span>
+	                        <!-- end blessing program added by sekar m on aug 26 -->
+
+	                        <!---6838 code start-->
+	                        <span class="tab3-content" id="ssist_org_block">
+	                         	<div class="form-row form-group ssist-question-block ">
+	                        		<div class="col-sm-12">
+		                                <label for="">
+		                                      Are you SSIAST Teacher? *
+		                                </label>
+		                                <div class="form-check form-check-inline">
+										  <input class="form-check-input cus-radio" type="radio" name="is_SSIAST_Teacher" id="is_SSIAST_Teacher_yes" value="1">
+										  <label class="form-check-label" for="is_SSIAST_Teacher_yes">Yes</label>
+										</div>
+										<div class="form-check form-check-inline">
+										  <input class="form-check-input cus-radio" type="radio" name="is_SSIAST_Teacher" id="is_SSIAST_Teacher_no" value="2">
+										  <label class="form-check-label" for="is_SSIAST_Teacher_no">No</label>
+										</div><br/>
+										<span class="error_display" id="is_SSIAST_Teacher_err"></span>
+		                            </div>
+	                        	</div>
+
+	                        	<div class="form-row form-group ssist-question-block-yes" style="display: none;">
+	                            	<div class="col-sm-12 medicalhistory-block">
+	                            		<label for="ssist_teacher_code">Teacher Code </label>
+		                                <input id="ssist_teacher_code" type="text" name="ssist_teacher_code" maxlenth="10" class="form-control input-element" >
+										<!-- <span class="error_display" id="ssist_teacher_code_err"></span> -->
+	                            	</div>
+	                            </div>
+
+	                            <div class="form-row form-group ssist-question-block-no" style="display: none;">
+	                        		<div class="col-sm-12">
+			                        	<label for="ssist_agri_teachers_list">
+		                                    Which Teacher's Agri teachers training batch are you applying for? *
+		                                </label>
+		                                <div class="form-holder">
+			                                <select class="form-control select-style" id="ssist_agri_teachers_list" name="ssist_agri_teachers_list" data-container="body">
+											</select>
+										</div>
+		      							<span class="error_display" id="ssist_agri_teachers_list_err"></span>
+			                        </div>
+	                        	</div>
+	                        </span>
+                        	<!---6838 code end-->
+
+
+
+
+
+	                        
+							<span class="tab3-content" id="health_block" style="display: none;">
+								<div class="form-row form-group health-block">
+									<div class="col-sm-12">
+	                            		<label for="course_teacher">
+		                            		Your health condition, if any
+		                                </label>
+		                                <div class="form-check form-check-inline">
+										  <input class="form-check-input health_cond" type="checkbox" id="ck1" name="health_cond[]" value="2">
+										  <label class="form-check-label" for="ck1">High B.P.</label>
+										</div>
+										<div class="form-check form-check-inline">
+										  <input class="form-check-input health_cond" type="checkbox" id="ck2" name="health_cond[]" value="8">
+										  <label class="form-check-label" for="ck2">Pregnancy</label>
+										</div>
+										<div class="form-check form-check-inline">
+										  <input class="form-check-input health_cond" type="checkbox" id="ck3" name="health_cond[]" value="3">
+										  <label class="form-check-label" for="ck3">Heart Problems</label>
+										</div>
+										<div class="form-check form-check-inline">
+										  <input class="form-check-input health_cond" type="checkbox" id="ck4" name="health_cond[]" value="7">
+										  <label class="form-check-label" for="ck4">Epilepsy/Bipolar/Schizophrenia</label>
+										</div>
+										<div class="form-check form-check-inline">
+										  <input class="form-check-input health_cond" type="checkbox" id="ck5" name="health_cond[]" value="5">
+										  <label class="form-check-label" for="ck5">Other</label>
+										</div><br/>
+										<span class="error_display" id="health_option_err"></span>
+		      							<span id="health_option_note"></span>
+		                            </div>
+								</div>
+								<div class="form-row form-group health-des-block" style="display: none;">
+									<div class="col-sm-12 where-block">
+	                            		<label for="health_des">
+		                            		Please mention health condition *
+		                                </label>
+		                                <input type="text" class="form-control input-element" id="health_des" name="health_des" maxlength="255">
+		      							<span class="error_display" id="health_des_err"></span>
+	                            	</div>
+								</div>
+								<div class="form-row form-group medication-block">
+									<div class="col-sm-12">
+		                                <label for="">
+		                                    Are you currently taking any prescribed medication? *
+		                                </label>
+		                                <div class="form-check form-check-inline">
+										  <input class="form-check-input cus-radio" type="radio" name="medication" id="medication_yes" value="1">
+										  <label class="form-check-label" for="medication_yes">Yes</label>
+										</div>
+										<div class="form-check form-check-inline">
+										  <input class="form-check-input cus-radio" type="radio" name="medication" id="medication_no" value="0">
+										  <label class="form-check-label" for="medication_no">No</label>
+										</div>
+										<span class="error_display" id="medication_err"></span>
+		                            </div>
+								</div>
+								<div class="form-row form-group medication-des-block" style="display: none;">
+									<div class="col-sm-12 where-block">
+	                            		<label for="medication_des">
+		                            		Please mention prescribed medication details *
+		                                </label>
+		                                <input type="text" class="form-control input-element" id="medication_des" name="medication_des" maxlength="255">
+		      							<span class="error_display" id="medication_des_err"></span>
+	                            	</div>
+								</div>
+								<div class="form-row form-group psychiatric-block">
+									<div class="col-sm-12">
+		                                <label for="">
+		                                    Have you undergone psychiatric treatment before? *
+		                                </label>
+		                                <div class="form-check form-check-inline">
+										  <input class="form-check-input cus-radio" type="radio" name="psychiatric" id="psychiatric_yes" value="1">
+										  <label class="form-check-label" for="psychiatric_yes">Yes</label>
+										</div>
+										<div class="form-check form-check-inline">
+										  <input class="form-check-input cus-radio" type="radio" name="psychiatric" id="psychiatric_no" value="0">
+										  <label class="form-check-label" for="psychiatric_no">No</label>
+										</div>
+										<span class="error_display" id="psychiatric_err"></span>
+		                            </div>
+								</div>
+								<div class="form-row form-group psychiatric-des-block" style="display: none;">
+									<div class="col-sm-12 where-block">
+	                            		<label for="psychiatric_des">
+		                            		Please mention psychiatric treatment details *
+		                                </label>
+		                                <input type="text" class="form-control input-element" id="psychiatric_des" name="psychiatric_des" maxlength="255">
+		      							<span class="error_display" id="psychiatric_des_err"></span>
+	                            	</div>
+								</div>
+							</span>
+
+							
+							<div class="tab3-content form-row form-group freecourse-question-block" style="display: none;">
+								<div class="col-sm-12">
+	                                <label for="">
+	                                    Have you learnt the SUDARSHAN KRIYA™ YOGA? *
+	                                </label>
+	                                <div class="form-check form-check-inline">
+									  <input class="form-check-input cus-radio" type="radio" name="fcquestion" id="fcquestion_yes" value="1">
+									  <label class="form-check-label" for="fcquestion_yes">Yes</label>
+									</div>
+									<div class="form-check form-check-inline">
+									  <input class="form-check-input cus-radio" type="radio" name="fcquestion" id="fcquestion_no" value="2">
+									  <label class="form-check-label" for="fcquestion_no">No</label>
+									</div>
+									<span class="error_display" id="fcquestion_err"></span>
+	                            </div>
+							</div>
+
+							<div class="tab3-content form-row form-group fcwelnes-question-block" style="display: none;">
+								<div class="col-sm-12">
+		                        	<label for="welnes_month">
+	                                    Date of wellness program they have done? *
+	                                </label>
+	                            </div>
+	                            <div class="col-sm-6">
+
+	      							<label for="psychiatric_des">
+	                            		Month *
+	                                </label>
+	                                <div class="form-holder">
+		                                <select class="form-control select-style" id="welnes_month" name="welnes_month" data-container="body">
+		                                	<option value="">Select Month</option>
+										    <option value="1">Jan</option>
+										    <option value="2">Feb</option>
+										    <option value="3">Mar</option>
+										    <option value="4">Apr</option>
+										    <option value="5">May</option>
+										    <option value="6">Jun</option>
+										    <option value="7">Jul</option>
+										    <option value="8">Aug</option>
+										    <option value="9">Sep</option>
+										    <option value="10">Oct</option>
+										    <option value="11">Nov</option>
+										    <option value="12">Dec</option>
+										</select>
+									</div>
+	      							<span class="error_display" id="welnes_month_err"></span>
+	      						</div>
+	      						<div class="col-sm-6">
+	      							<label for="welnes_year">
+	                            		Year *
+	                                </label>
+	                                <input type="text" class="form-control input-element" id="welnes_year" name="welnes_year" maxlength="4">
+	      							<span class="error_display" id="welnes_year_err"></span>
+		                        </div>
+							</div>
+
+							<div class="tab3-content form-row form-group fcwelnes-question-block" style="display: none;">
+								<div class="col-sm-12">
+	      							<label for="welnes_teacher">
+	                            		Teacher Code *
+	                                </label>
+	                                <input type="text" class="form-control input-element" id="welnes_teacher" name="welnes_teacher" maxlength="6">
+	      							<span class="error_display" id="welnes_teacher_err"></span>
+		                        </div>
+							</div>
+
+							<div class="tab3-content form-row form-group decide-block" style="display: none;">
+                        		<div class="col-sm-6">
+		                        	<label for="how_you_know">
+	                                    What helped you decide to participate in this program *
+	                                </label>
+	                                <div class="form-holder">
+		                                <select class="form-control select-style" id="how_you_know" name="how_you_know" data-container="body">
+		                                	<option value="0">Select</option>
+										    <option value="1">Friend / Word of Mouth</option>
+										    <option value="2">Website / Email / Social Media</option>
+										    <option value="3">Print Media</option>
+										    <option value="4">Through another Art of Living Program</option>
+										    <option value="5">Others</option>
+										</select>
+									</div>
+	      							<span class="error_display" id="how_you_know_err"></span>
+		                        </div>
+		                        <div class="col-sm-6 hide" id="reason_block">
+	      							<label for="reason" id="how_you_know_text">
+	                            		Others *
+	                                </label>
+	                                <input type="text" class="form-control input-element" id="reason" name="reason" maxlength="250">
+	      							<span class="error_display" id="reason_err"></span>
+		                        </div>
+			                </div>
+
+			                <!-- added by jaya crfuat-6311 27 Oct 2021 start -->
+							<span class="tab3-content pre_post_natal_block" style="display: none;">
+								<div class="form-row form-group emergency-name-block">
+									<div class="col-sm-12">
+		                                <label for="">
+		                                    Emergency Contact Name *
+		                                </label>
+		                            </div>
+		                            <div class="col-sm-6">
+		                                <label for="emergency_first_name">
+		                                    First Name *
+		                                </label>
+		                                <input type="text" class="form-control input-element" id="emergency_first_name" name="emergency_first_name" maxlength="100">
+		      							<span class="error_display" id="emergency_first_name_err"></span>
+		                            </div>
+		                            <div class="col-sm-6">
+		                                <label for="emergency_last_name">
+		                                    Last Name *
+		                                </label>
+		                                <input type="text" class="form-control input-element" id="emergency_last_name" name="emergency_last_name" maxlength="100">
+		      							<span class="error_display" id="emergency_last_name_err"></span>
+		                            </div>
+		                        </div>
+		                        <div class="form-row form-group emgergency-number-block">
+		                            <div class="col-sm-12">
+		                                <label for="emergency_phone">
+		                                    Emergency Contact Number *
+		                                </label>
+		                                <input type="text" class="form-control input-element" id="emergency_phone" name="emergency_phone" maxlength="10">
+		      							<span class="error_display" id="emergency_phone_err"></span>
+		                            </div>
+		                        </div>
+		                        <div class="form-row form-group occ-block">
+		                            <div class="col-sm-12">
+		                                <label for="occupation_natal">
+		                                    Occupation
+		                                </label>
+		                                <input type="text" class="form-control input-element" id="occupation_natal" name="occupation_natal" maxlength="150">
+		                            </div>
+		                        </div>
+		                        <div class="form-row form-group natal-radio-block">
+			                        <div class="col-sm-12">
+		                                <label for="pre_post_natal_option">
+		                                    Pre/Post Natal *
+		                                </label>
+		                                <div class="form-check form-check-inline">
+										  <input class="form-check-input pre_post_natal_class cus-radio" type="radio" name="pre_post_natal_option" id="CIVICRM_QFID_1_61" value="1">
+										  <label class="form-check-label" for="CIVICRM_QFID_1_61">Pre Natal</label>
+										</div>
+										<div class="form-check form-check-inline">
+										  <input class="form-check-input pre_post_natal_class cus-radio" type="radio" name="pre_post_natal_option" id="CIVICRM_QFID_2_81" value="2">
+										  <label class="form-check-label" for="CIVICRM_QFID_2_81">Post Natal</label>
+										</div>
+										<span class="error_display" id="pre_post_natal_option_err"></span>
+
+		                            </div>
+	                        	</div>
+
+	                        	<div class="pre-natal-block" style="display: none;">
+	                        		<div class="form-row form-group pregnancy-week-block">
+			                            <div class="col-sm-12">
+			                                <label for="pregnecy_week">
+			                                    Current week of pregnancy *
+			                                </label>
+			                                <input type="text" class="form-control input-element" id="pregnecy_week" name="pregnecy_week" maxlength="2">
+			      							<span class="error_display" id="pregnecy_week_err"></span>
+			                            </div>
+			                        </div>
+			                        <div class="form-row form-group pregnancy-date-block">
+			                            <div class="col-sm-12">
+			                                <label for="pregnecy_due_date">
+			                                    Due Date *
+			                                </label>
+			                                <div class='date' id="datepicker1">
+												<input type='text' placeholder="Select DOB" autocomplete="off" class="form-control input-element" id="pregnecy_due_date" name="pregnecy_due_date" readonly="readonly" />
+												<span class="input-group-addon hide">
+											    <span class="glyphicon glyphicon-calendar"></span>
+												</span>
+											</div>
+			      							<span class="error_display" id="pregnecy_due_date_err"></span>
+			                            </div>
+			                        </div>
+			                        <div class="form-row form-group pregnancy-delivery-block">
+			                            <div class="col-sm-12">
+			                                <label for="pregnecy_delivery_place">
+			                                    Planned Place of Delivery *
+			                                </label>
+			                                <input type="text" class="form-control input-element" id="pregnecy_delivery_place" name="pregnecy_delivery_place" maxlength="150">
+			      							<span class="error_display" id="pregnecy_delivery_place_err"></span>
+			                            </div>
+			                        </div>
+	                        	</div>
+
+	                        	<div class="post-natal-block" style="display: none;">
+	                        		<div class="form-row form-group delivery-type-block">
+	                        			<div class="col-sm-12">
+			                                <label for="">
+			                                    Delivery Type *
+			                                </label>
+			                                <div class="form-check form-check-inline">
+											  <input class="form-check-input delivery_type_class cus-radio" type="radio" name="delivery_type" id="CIVICRM_QFID_1_6" value="1">
+											  <label class="form-check-label" for="CIVICRM_QFID_1_6">Normal</label>
+											</div>
+											<div class="form-check form-check-inline">
+											  <input class="form-check-input delivery_type_class cus-radio" type="radio" name="delivery_type" id="CIVICRM_QFID_2_8" value="2">
+											  <label class="form-check-label" for="CIVICRM_QFID_2_8">Cesarean</label>
+											</div>
+											<span class="error_display" id="delivery_type_err"></span>
+			                            </div>
+	                        		</div>
+	                        		<div class="form-row form-group delivery-time-block">
+			                            <div class="col-sm-12">
+			                                <label for="time_after_delivery">
+			                                    Time period after delivery (in week/s) *
+			                                </label>
+			                                <input type="text" class="form-control input-element" id="time_after_delivery" name="time_after_delivery" maxlength="2">
+			      							<span class="error_display" id="time_after_delivery_err"></span>
+			                            </div>
+			                        </div>
+	                        	</div>
+
+	                        	<div class="prepost-natal-block" style="display: none;">
+	                        		<div class="form-row form-group first-delivery-block">
+	                        			<div class="col-sm-12">
+			                                <label for="">
+			                                    Is this your first pregnancy? *
+			                                </label>
+			                                <div class="form-check form-check-inline">
+											  <input class="form-check-input first_delivery_class cus-radio" type="radio" name="first_delivery" id="CIVICRM_QFID_1_6_fd" value="1">
+											  <label class="form-check-label" for="CIVICRM_QFID_1_6_fd">Yes</label>
+											</div>
+											<div class="form-check form-check-inline">
+											  <input class="form-check-input first_delivery_class cus-radio" type="radio" name="first_delivery" id="CIVICRM_QFID_2_8_fd_no" value="2">
+											  <label class="form-check-label" for="CIVICRM_QFID_2_8_fd_no">No</label>
+											</div>
+											<span class="error_display" id="first_delivery_err"></span>
+			                            </div>
+	                        		</div>
+	                        		<div class="form-row form-group firstdelivery-des-block" style="display: none;">
+			                            <div class="col-sm-12">
+			                                <label for="first_delivery_desc">
+			                                    Details of previous pregnancies *
+			                                </label>
+			                                <input type="text" class="form-control input-element" id="first_delivery_desc" name="first_delivery_desc" maxlength="250">
+			      							<span class="error_display" id="first_delivery_desc_err"></span>
+			                            </div>
+			                        </div>
+			                        <div class="form-row form-group children-age-block firstdelivery-des-block" style="display: none;">
+			                            <div class="col-sm-12">
+			                                <label for="children_age">
+			                                    Please give ages of children, if applicable
+			                                </label>
+			                                <input type="number" class="form-control input-element" id="children_age" name="children_age" min="1" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.min;">
+			                                <span class="error_display" id="children_age_err"></span>
+			                            </div>
+			                        </div>
+			                        <div class="form-row form-group Previous-miscarriage-block">
+	                        			<div class="col-sm-12">
+			                                <label for="">
+			                                    Previous miscarriages (If any) *
+			                                </label>
+			                                <div class="form-check form-check-inline">
+											  <input class="form-check-input previous_miscarriages_class cus-radio" type="radio" name="previous_miscarriages" id="previous_miscarriages_yes" value="1">
+											  <label class="form-check-label" for="previous_miscarriages_yes">Yes</label>
+											</div>
+											<div class="form-check form-check-inline">
+											  <input class="form-check-input previous_miscarriages_class cus-radio" type="radio" name="previous_miscarriages" id="previous_miscarriages_no" value="2">
+											  <label class="form-check-label" for="previous_miscarriages_no">No</label>
+											</div>
+											<span class="error_display" id="previous_miscarriages_err"></span>
+			                            </div>
+	                        		</div>
+	                        		<div class="form-row form-group pmiscarriages-des-block" style="display: none;">
+			                            <div class="col-sm-12">
+			                                <label for="previous_miscarriages_desc">
+			                                    Details *
+			                                </label>
+			                                <input type="text" class="form-control input-element" id="previous_miscarriages_desc" name="previous_miscarriages_desc" maxlength="250">
+			                            </div>
+			                            <span class="error_display" id="previous_miscarriages_desc_err"></span>
+			                        </div>
+			                        <div class="form-row form-group family-miscarriage-block">
+	                        			<div class="col-sm-12">
+			                                <label for="">
+			                                    Is there any Family History of miscarriages *
+			                                </label>
+			                                <div class="form-check form-check-inline">
+											  <input class="form-check-input family_miscarriages_class cus-radio" type="radio" name="family_miscarriages" id="family_miscarriages_yes" value="1">
+											  <label class="form-check-label" for="family_miscarriages_yes">Yes</label>
+											</div>
+											<div class="form-check form-check-inline">
+											  <input class="form-check-input family_miscarriages_class cus-radio" type="radio" name="family_miscarriages" id="family_miscarriages_no" value="2">
+											  <label class="form-check-label" for="family_miscarriages_no">No</label>
+											</div>
+											<span class="error_display" id="family_miscarriages_err"></span>
+			                            </div>
+	                        		</div>
+	                        		<div class="form-row form-group fmiscarriages-des-block" style="display: none;">
+			                            <div class="col-sm-12">
+			                                <label for="family_miscarriages_desc">
+			                                    Your relation? *
+			                                </label>
+			                                <input type="text" class="form-control input-element" id="family_miscarriages_desc" name="family_miscarriages_desc" maxlength="250">
+			                                <span class="error_display" id="family_miscarriages_desc_err"></span>
+			                            </div>
+			                        </div>
+			                        <div class="form-row form-group accidental-pregnency-block">
+	                        			<div class="col-sm-12">
+			                                <label for="">
+			                                    Was it an accidental pregnancy or a planned one? *
+			                                </label>
+			                                <div class="form-check form-check-inline">
+											  <input class="form-check-input accidental_pregnancy_class cus-radio" type="radio" name="accidental_pregnancy" id="accidental_pregnancy_yes" value="1">
+											  <label class="form-check-label" for="accidental_pregnancy_yes">Accidental Pregnancy</label>
+											</div>
+											<div class="form-check form-check-inline">
+											  <input class="form-check-input accidental_pregnancy_class cus-radio" type="radio" name="accidental_pregnancy" id="accidental_pregnancy_no" value="2">
+											  <label class="form-check-label" for="accidental_pregnancy_no">Planned One</label>
+											</div>
+											<span class="error_display" id="accidental_pregnancy_err"></span>
+			                            </div>
+	                        		</div>
+
+	                        		<div class="form-row form-group pregnancy-experience-block">
+	                        			<div class="col-sm-12">
+			                                <label for="">
+			                                    In this pregnancy have you experienced these symptoms? (Please tick) multiple checkboxes
+			                                </label>
+			                            </div>
+			                            <div class="col-sm-6">
+			                            	<div class="form-check">
+												<input class="form-check-input pregnancy_experience" type="checkbox" value="1" name="pregnancy_experience[]" id="pregnancy_experience1">
+												<label class="form-check-label" for="pregnancy_experience1">
+												    Morning sickness
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input pregnancy_experience" type="checkbox" value="2" name="pregnancy_experience[]" id="pregnancy_experience2">
+												<label class="form-check-label" for="pregnancy_experience2">
+												    Headaches
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input pregnancy_experience" type="checkbox" value="3" name="pregnancy_experience[]" id="pregnancy_experience3">
+												<label class="form-check-label" for="pregnancy_experience3">
+												    Dizziness
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input pregnancy_experience" type="checkbox" value="4" name="pregnancy_experience[]" id="pregnancy_experience4">
+												<label class="form-check-label" for="pregnancy_experience4">
+												    Constipation
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input pregnancy_experience" type="checkbox" value="5" name="pregnancy_experience[]" id="pregnancy_experience5">
+												<label class="form-check-label" for="pregnancy_experience5">
+												    Heartburn
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input pregnancy_experience" type="checkbox" value="6" name="pregnancy_experience[]" id="pregnancy_experience6">
+												<label class="form-check-label" for="pregnancy_experience6">
+												    Breathlessness
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input pregnancy_experience" type="checkbox" value="7" name="pregnancy_experience[]" id="pregnancy_experience7">
+												<label class="form-check-label" for="pregnancy_experience7">
+												    Nosebleeds
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input pregnancy_experience" type="checkbox" value="8" name="pregnancy_experience[]" id="pregnancy_experience8">
+												<label class="form-check-label" for="pregnancy_experience8">
+												    Anemia
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input pregnancy_experience" type="checkbox" value="9" name="pregnancy_experience[]" id="pregnancy_experience9">
+												<label class="form-check-label" for="pregnancy_experience9">
+												    Diabetes
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input pregnancy_experience" type="checkbox" value="10" name="pregnancy_experience[]" id="pregnancy_experience10">
+												<label class="form-check-label" for="pregnancy_experience10">
+												    Lower back pain
+												</label>
+											</div>
+			                            </div>
+			                            <div class="col-sm-6">
+			                            	<div class="form-check">
+												<input class="form-check-input pregnancy_experience" type="checkbox" value="11" name="pregnancy_experience[]" id="pregnancy_experience11">
+												<label class="form-check-label" for="pregnancy_experience11">
+												    Sciatica
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input pregnancy_experience" type="checkbox" value="12" name="pregnancy_experience[]" id="pregnancy_experience12">
+												<label class="form-check-label" for="pregnancy_experience12">
+												    Aching groins
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input pregnancy_experience" type="checkbox" value="13" name="pregnancy_experience[]" id="pregnancy_experience13">
+												<label class="form-check-label" for="pregnancy_experience13">
+												    Varicose veins
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input pregnancy_experience" type="checkbox" value="14" name="pregnancy_experience[]" id="pregnancy_experience14">
+												<label class="form-check-label" for="pregnancy_experience14">
+												    Edema
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input pregnancy_experience" type="checkbox" value="15" name="pregnancy_experience[]" id="pregnancy_experience15">
+												<label class="form-check-label" for="pregnancy_experience15">
+												    Sleep disturbances
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input pregnancy_experience" type="checkbox" value="16" name="pregnancy_experience[]" id="pregnancy_experience16">
+												<label class="form-check-label" for="pregnancy_experience16">
+												    High-blood pressure
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input pregnancy_experience" type="checkbox" value="17" name="pregnancy_experience[]" id="pregnancy_experience17">
+												<label class="form-check-label" for="pregnancy_experience17">
+												    Pre-eclampsia
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input pregnancy_experience" type="checkbox" value="18" name="pregnancy_experience[]" id="pregnancy_experience18">
+												<label class="form-check-label" for="pregnancy_experience18">
+												    Bleeding
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input pregnancy_experience" type="checkbox" value="19" name="pregnancy_experience[]" id="pregnancy_experience19">
+												<label class="form-check-label" for="pregnancy_experience19">
+												    Depression
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input pregnancy_experience" type="checkbox" value="20" name="pregnancy_experience[]" id="pregnancy_experience20">
+												<label class="form-check-label" for="pregnancy_experience20">
+												    Anxiety
+												</label>
+											</div>
+			                            </div>
+	                        		</div>
+	                        		<div class="form-row form-group other-issue-block">
+			                            <div class="col-sm-12">
+			                                <label for="other_issue">
+			                                    If any other issue, please mention here
+			                                </label>
+			                                <input type="text" class="form-control input-element" id="other_issue" name="other_issue" maxlength="250">
+			                                <span class="error_display" id="other_issue_err"></span>
+			                            </div>
+			                        </div>
+			                        <div class="form-row form-group other-issue-block">
+			                            <div class="col-sm-12">
+			                                <label for="other_health_issue">
+			                                    Please give details of above or any other health issues, surgery or injuries
+			                                </label>
+			                                <input type="text" class="form-control input-element" id="other_health_issue" name="other_health_issue" maxlength="250">
+			                                <span class="error_display" id="other_health_issue_err"></span>
+			                            </div>
+			                        </div>
+			                        <div class="form-row form-group practiced-yoga-block">
+			                            <div class="col-sm-12">
+			                                <label for="practiced_yoga_before">
+			                                    Have you practiced yoga before, if so how long, what style etc?
+			                                </label>
+			                                <input type="text" class="form-control input-element" id="practiced_yoga_before" name="practiced_yoga_before" maxlength="250">
+			                                <span class="error_display" id="practiced_yoga_before_err"></span>
+			                            </div>
+			                        </div>
+
+	                        	</div>
+
+							</span>
+
+	                	</div>
+
+	                	<!-- SECTION 4 -->
+	                	<div class="tab-pane" id="tab4">
+
+	                		<div class="form-row form-group donation-block" style="display: none;">
+	                            <div class="col-sm-12">
+	                                <div class="form-check">
+										<input class="form-check-input" type="checkbox" name="donate_contribution" id="donate_contribution">
+										<label class="form-check-label" for="donate_contribution">
+										    I  would like to donate towards Art of Living Seva Projects
+										</label>
+									</div>
+	                                <span style="display: none; " id="donation_amount_block">₹&nbsp;&nbsp;&nbsp;<input  type="text" class="form-control input-element d-amount" id="donation_amount" name="donation_amount" placeholder="Amount"  maxlength="7" /></span><p class="mt-5px" id="donation_amount_words"></p>
+									<div class="error_display" id="donation_amount_err"></div>
+	                            </div>
+	                        </div>
+
+	                        <div class="form-row form-group declaration_kids_div childrenprogramhide">
+	                        	<div class="col-sm-12">
+	                        		<a class="" data-toggle="collapse" href="#reg-auth-kids" role="button" aria-expanded="false" aria-controls="reg-auth-kids">
+	                                    AUTHORIZATION FOR PHOTOS AND VIDEOS
+	                                </a>
+	                                <div class="collapse" id="reg-auth-kids">
+									  	<div class="card card-body agr-expand">
+									    	<p>I <u><span class="parentName"></span></u>, the parent/legal guardian of the child, named <u><span class="paxName"></span></u> participating in the Art of Living program, named <u><span class="courseType"></span></u> <span class="org_name"></span> to publish, in printed or soft copy format, including on the internet, photographic images or video content of myself/ my child.As relevant to the photograph/ video, I also authorize the publication of any statements made by me/ my child as well as my/ his/ her name, type of school, age and city, my (parent/guardian’s) name and the name and my relationship to other subjects in the picture. I am aware that the photographic images, statements and personal details of my child/myself, may be published by the <span class="org_name"></span> in articles or publicity materials and may be republished by them where relevant to similar services or contexts that are not offensive to the dignity of the child, myself and any other subjects in the picture. </p>
+
+											<p>I have been informed by the <span class="org_name"></span> that as regards the collection and treatment of my personal data, along with the personal data of the participating minor child (where applicable) and of all the other subjects present in the photo, released by means of this authorization, those in charge of the treatment of the data will be the staff, employees or experienced volunteers of the  <span class="org_name"></span> and I will be able to exercise the rights as laid down in the Information Technology Act and to know who the people in charge of the treatment of the data are, by writing to the <span class="org_name"></span>. </p>
+
+											<p>I (the parent/participant, on behalf of myself and those of my family members present during the whole or part of the Art of Living <u><span class="courseType"></span></u> Program) FURTHER DECLARE that I will make no claim of any sort in relation to and waive any monetary benefit that may be derived from the publication of the above mentioned photos, videos, pictures, statements and materials relevant to the subject of this agreement, against the <span class="org_name"></span>, and the associated declarations of my/the participating child’s relevant personal information, and release <span class="org_name"></span> from any liability arising from any such publication.</p>
+									  	</div>
+									</div>
+	                        	</div>
+	                        	<div class="col-sm-12">
+	                                <label for="">
+	                                    I <u><span class="parentName" ></span></u> hereby,
+	                                </label>
+	                                <div class="form-check form-check-inline">
+									  <input class="form-check-input consent_radio cus-radio" type="radio" name="consent" id="consent1" value="1">
+									  <label class="form-check-label" for="consent1">GIVE Consent</label>
+									</div>
+									<div class="form-check form-check-inline">
+									  <input class="form-check-input consent_radio cus-radio" type="radio" name="consent" id="consent2" value="2">
+									  <label class="form-check-label" for="consent2">DO NOT GIVE Consent</label>
+									</div><br/>
+									<span class="error_display" id="consent_err"></span>
+	                            </div>
+	                        </div>
+
+	                        <div class="form-row form-group declaration_kids_div childrenprogramhide">
+	                        	<div class="col-sm-12">
+	                        		<a class="" data-toggle="collapse" href="#reg-health-kids" role="button" aria-expanded="false" aria-controls="reg-health-kids">
+	                                    HEALTH DECLARATION
+	                                </a>
+	                                <div class="collapse" id="reg-health-kids">
+									  	<div class="card card-body agr-expand">
+									    	<p>I <u><span class="parentName"></span></u>, Parent/ Guardian, am fully and personally responsible for my child’s own safety and actions while and during his/her participation and I rec-ognize that my child may be at risk of contracting COVID-19 </p>
+
+											<p>With full knowledge of the risks involved, I hereby release, waive, discharge the Organization, its board, officers, independent contractors, affiliates, employees, representatives, successors, and assigns from any and all liabilities, claims, demands, actions, and causes of action what-soever, directly or indirectly arising out of or related to any loss, damage, injury, or death, that may be sustained by me related to COVID-19 while participating in any activity while in, on, or around the premises or while using the facilities that may lead to unintentional exposure or harm due to COVID-19. </p>
+
+											<p>I  agree to indemnify, defend, and hold harmless the Organization from and against any and all costs, expenses, damages, lawsuits, and/or liabilities or claims arising whether directly or indirectly from or related to any and all claims made by or against any of the released party due to injury, loss, or death from or related to COVID-19.</p>
+
+											<p>My child has not been, nor me nor any member(s) of my household, diagnosed to be infected of COVID-19 virus within the last 30 days. My child will wear the face mask, use own sanitizer, maintain physical distancing, carry his/ her own water bottle</p>
+									  	</div>
+									</div>
+	                        	</div>
+	                        	<div class="col-sm-12">
+	                                <label for="">
+	                                    I <u><span class="parentName" ></span></u> hereby,
+	                                </label>
+	                                <div class="form-check form-check-inline">
+									  <input class="form-check-input health_consent_radio cus-radio" type="radio" name="health_consent" id="health_consent1" value="1">
+									  <label class="form-check-label" for="health_consent1">GIVE Consent</label>
+									</div>
+									<div class="form-check form-check-inline">
+									  <input class="form-check-input health_consent_radio cus-radio" type="radio" name="health_consent" id="health_consent2" value="2">
+									  <label class="form-check-label" for="health_consent2">DO NOT GIVE Consent</label>
+									</div><br/>
+									<span class="error_display" id="health_consent_err"></span>
+	                            </div>
+	                        </div>
+
+	                        <div class="form-row form-group" id="prg_agree_block" style="display: none;">
+	                            <div class="col-sm-12">
+	                                <div class="form-check">
+										<input class="form-check-input" type="checkbox" name="prg_agree" id="prg_agree">
+										<label class="form-check-label" for="prg_agree">
+										    I have taken the consent of my Gynaecologist to join this program.
+										</label>
+									</div>
+	                                <div class="error_display" id="prg_check_err">The above consent is necessary to register for this program.</div>
+	                            </div>
+	                        </div>
+
+							<div class="form-row form-group prepost-natal-declaration-block" style="display: none;">
+								<div class="col-sm-12">
+	                                <label for="">Declaration</label>
+	                            </div>
+	                            <div class="col-sm-12">
+	                                <div class="form-check">
+										<input class="form-check-input" type="checkbox" name="prepostnatal_declaration" id="prepostnatal_declaration">
+										<label class="form-check-label" for="prepostnatal_declaration">
+										    <p>To the best of my knowledge and information, I have disclosed to my Yoga teacher all information regarding my health relevant to the practice of Yoga during pregnancy, in the course of labor and during the months following childbirth. </p>
+											<p>My Gynecologist/Doctor has advised me to practice yoga as a routine with a certified prenatal and postnatal yoga teacher. </p>
+											<p>I understand that Yoga asanas which are being taught to me is by a certified prenatal and postnatal yoga teacher who has also explained to me the usefulness of practicing the yoga in the correct form and consequences of performing it wrongly. As such I would be responsible for the happenings while I am practicing on my own.</p>
+											<p>I accept that the teacher/The Art of Living is not responsible for any applications of Yoga practices outside the scope of the teachings of the certified prenatal and postnatal yoga teacher. </p>
+											<p>I understand that all advices and suggestions of my Gynecologist/Doctor will prevail. </p>
+										</label>
+									</div>
+	                                <div class="error_display" id="prepostnatal_declaration_err">The above consent is necessary to register for this program.</div>
+	                            </div>
+							</div>
+
+														<div class="form-row form-group" id="declaration_div">
+	                        	<div class="col-sm-12">
+	                                <div class="form-check">
+										<input class="form-check-input" type="checkbox" name="declaration" id="declaration" checked="checked">
+										<label class="form-check-label" for="declaration">
+										    I  agree to the <span id="diclaimer_fc"><a class="" data-toggle="collapse" href="#reg-disclaimer-fc" role="button" aria-expanded="false" aria-controls="reg-disclaimer-fc">
+			                                    Disclaimer
+			                                </a>, </span>  <a class="" data-toggle="collapse" href="#reg-terms" role="button" aria-expanded="false" aria-controls="reg-terms">
+			                                    Terms & Conditions
+			                                </a> of my program participation.
+										</label>
+									</div>
+									<div class="collapse" id="reg-terms">
+									  	<div class="card card-body agr-expand">
+									    	<p>I am participating in this ‘Art of Living’ program of my own interest and I take full responsibility for my participation. I release <span class="org_full_name"></span>, all its organisers, teachers and assistants in this program from all damages whatsoever, and waive all rights to compensation in case of injury. I declare that I am physically and mentally fit to participate in this program. I will not teach any techniques of the program unless I have been fully personally trained by Gurudev Sri Sri Ravi Shankar. I will keep the contents of the program and the techniques revealed to me during the program confidential.
+											<br/>
+											I would like to receive updates & communication related to this program from The Art of Living on WhatsApp for the mobile number provided during the registration. This will not be applicable if the provided mobile number is not registered with WhatsApp, instead will receive confirmation through SMS.</p>
+									  	</div>
+									</div>
+	                                <div class="collapse" id="reg-disclaimer-fc">
+									  	<div class="card card-body agr-expand">
+									    	<p>
+												Kindly note that this program doesn't cure COVID. In case of any symptoms please consult your doctor immediately. Please follow all the COVID guidelines issued by your local authorities.
+											</p>
+									  	</div>
+									</div>
+									<div class="error_display" id="declaration_err"></div>
+	                        	</div>
+	                        </div>
+
+
+							
+
+	                        <div class="form-row form-group declaration_kids_div" >
+	                        	<div class="col-sm-12">
+	                                <div class="form-check">
+										<input class="form-check-input" type="checkbox" name="declaration_kid" id="declaration_kid" checked="checked">
+										<label class="form-check-label nav nav-pills" for="declaration_kid">
+										    I  agree to the <a class="" data-toggle="pill" href="#reg-declaration-kids" >Declaration</a>, <a class="" data-toggle="pill" href="#reg-disclaimer-kids">Disclaimer</a>, <a class="" data-toggle="pill" href="#reg-confidentiality-kids" >Confidentiality and Non-Disclosure Agreement</a>, <a class="" data-toggle="pill" href="#reg-auth-photovideo-kids" >Authorization For Photos and Videos </a> & <a class="" data-toggle="pill" href="#reg-health-declaration-kids" >Health Declaration </a> of my child’s program participation.
+										</label>
+										<div class="error_display" id="declaration_kid_err"></div>
+									</div>
+								<div class="tab-content">
+									<div class="tab-pane fade" id="reg-declaration-kids">
+									  	<div class="card card-body agr-expand">
+									  		DECLARATION
+											<p class="text-justify">I <u><span class="parentName"></span></u>, Parent/Guardian, give permission to my child named <u><span class="paxName"></span></u> to attend The Art of Living <u><span class="courseType"></span></u> program on the following dates: <u><span class="CourseDates"></span></u>. My child agrees to abide by the rules and regulations stated by The Art of Living, India (TAOL). I understand that any infraction may result in dismissal from the program at my expense. I release TAOL, all organizers, teachers and assistants in this program from all damages whatsoever and waive all right to compensation in case of injury. I declare that my child is physically and mentally able to participate in this program. I agree to receive information from The Art of Living through various media including print and electronic media with a facility to opt out.</p>
+									  	</div>
+									</div>
+									<div class="tab-pane fade" id="reg-disclaimer-kids">
+									  	<div class="card card-body agr-expand">
+									  		DISCLAIMER
+									    	<p class="text-justify">I understand that TAOL cannot give me any guarantee for any specific results. Nature & extent of result depends on the degree of participation during the program and regularity of practice following all take home instructions, after the program.</p>
+									  	</div>
+									</div>
+
+									<div class="tab-pane fade" id="reg-confidentiality-kids">
+									  	<div class="card card-body agr-expand">
+									  CONFIDENTIALITY AND NON-DISCLOSURE AGREEMENT
+<p class="text-justify">I <u><span class="parentName"></span></u>, Parent/Guardian of <u><span class="paxName"></span></u> know and understand that The Art of Living
+<u><span class="courseType"></span></u> program is a proprietary program of TAOL. TAOL owns all intellectual property rights in this program as a whole, in the sequence of processes taught to my child as part of the program, and in all materials and practice tools (including Apps, explanatory notes or other materials) that are provided to the child during or after the program. I, as parent of the named
+participating child, and observer of the program and of the processes that are a part of it,hereby undertake and promise to keep everything that I see or learn from or about the content of the program as a secret and not disclose, describe or explain all or any part of it to any third person or party. I will also encourage my child to keep the processes and techniques learnt by him/her during the program as a secret and use it only for his/her own personal development.</p>
+<p class="text-justify mt-3">I understand that this secrecy is important to maintain the authenticity, quality and depth of the sacred knowledge disclosed to my child. Accordingly, I whole-heartedly support this endeavour and solemnly undertake and promise to do everything in my power to respect and preserve the secrecy of the sacred knowledge and processes disclosed to my child during this program, and
+also to take all necessary steps to ensure that the materials (Apps, handouts etc.) received by him/her for home practice are used only by him/her and not disclosed to any third parties. I further understand that in order to teach this program or any of the processes that form part of the program, one needs to undergo specialised training. Inaccurately delivered instructions will not lead to any benefit and will be entirely ineffective for the receiver of the instructions. I will, therefore, encourage my child to keep the processes learnt by him/her during the program, aswell as any/all materials received for home practice, as a secret and not teach or share the whole or any part of it to/with any other child or person.</p>
+
+
+									  	</div>
+									</div>
+									<div class="tab-pane fade" id="reg-auth-photovideo-kids">
+									  	<div class="card card-body agr-expand">
+									  		AUTHORIZATION FOR PHOTOS AND VIDEOS
+<p class="text-justify">I <u><span class="parentName"></span></u>, the parent/legal guardian of the child, named <u><span class="paxName"></span></u> participating in The Art of Living program, named <u><span class="courseType"></span></u> AUTHORISE</p>
+<p class="text-justify mt-3">TAOL to publish, in printed or soft copy format, including on the internet, photographic images or video content of myself/ my child.</p>
+<p class="text-justify mt-3">As relevant to the photograph/ video, I also authorize the publication of any statements made by me/ my child as well as my/ his/ her name, type of school, age and city, my (parent/guardian’s) name and the name and my relationship to other subjects in the picture. I am aware that the photographic images, statements and personal details of my child/myself, may be published by the TAOL in articles or publicity materials and may be republished by them where relevant to similar services or contexts that are not offensive to the dignity of the child,
+myself and any other subjects in the picture.</p>
+<p class="text-justify mt-3">I have been informed by the TAOL that as regards the collection and treatment of my personal data, along with the personal data of the participating minor child (where applicable) and of all the other subjects present in the photo, released by means of this authorization, those in charge of the treatment of the data will be the staff, employees or experienced volunteers of the TAOL and I will be able to exercise the rights as laid down in the Information Technology Act and to know who the people in charge of the treatment of the data are, by writing to the TAOL.</p>
+<p class="text-justify mt-3">I (the parent/participant, on behalf of myself and those of my family members present during the whole or part of The Art of Living <u><span class="courseType"></span></u> Program) FURTHER DECLARE </p>
+<p class="text-justify">that I will make no claim of any sort in relation to and waive any monetary benefit that may be derived from the publication of the above mentioned photos, videos, pictures, statements and materials relevant to the subject of this agreement, against the TAOL, and the associated declarations of my/the participating child’s relevant personal information, and release TAOL from any liability arising from any such publication.</p>
+
+
+									  	</div>
+									</div>
+									<div class="tab-pane fade" id="reg-health-declaration-kids">
+									  	<div class="card card-body agr-expand">
+									  		HEALTH DECLARATION
+<p class="text-justify">I <u><span class="parentName"></span></u>, Parent/ Guardian, am fully and personally responsible for my child’s own safety and actions while and during his/her participation and I rec-ognize that my child may be at risk of contracting COVID-19 with full knowledge of the risks involved, I hereby release, waive,
+discharge the Organization, its board, officers, independent contractors, affiliates, employees, representatives, successors, and assigns from any and all liabilities, claims, demands, actions, and causes of action what-soever, directly or indirectly arising out of or related to any loss,damage, injury, or death, that may be sustained by me related to COVID-19 while participating in any activity while in, on, or around the premises or while using the facilities that may lead to unintentional exposure or harm due to COVID-19.</p>
+<p class="text-justify mt-3">I agree to indemnify, defend, and hold harmless the Organization from and against any and all costs, expenses, damages, lawsuits, and/or liabilities or claims arising whether directly or indirectly from or related to any and all claims made by or against any of the released party due to injury, loss, or death from or related to COVID-19.</p>
+<p class="text-justify mt-3">My child has not been, nor me nor any member(s) of my household, diagnosed to be infected of COVID-19 virus within the last 30 days. My child will wear the face mask, use own sanitizer, maintain physical distancing, carry his/ her own water bottle.</p>
+
+									  	</div>
+									</div>
+								</div>
+									<div class="error_display" id="declaration_kid_err"></div>
+	                        	</div>
+	                        </div>
+
+	                        <div class="form-row form-group">
+	                            <div class="col-sm-12">
+									<label id="declaration_text"></label>
+								</div>
+	                        </div>
+
+	                		
+	                		<div style="display: none;" class="form-row form-group" id="pg_list">
+		                            <div class="col-sm-12 text-center">
+										<h5>Select Payment Gateway</h5>
+									</div>
+									<div class="col-sm-12 text-center"  id="pg_list_html">
+	    							</div>
+									<div class="col-sm-12">
+										<label>You can make payment using the following payment methods: Credit/Debit Cards, Net Banking, UPI</label>
+									</div>
+							</div>
+							<div class="form-row form-group">
+								<div class="col-sm-12" id="payment_text">
+									<label>On clicking the below register button, you will be redirected to payment gateway for a payment of ₹ <span id="pay_amount"></span></label>
+								</div>
+	                        </div>
+
+	                         <!--added by senthil 7389 start-->
+	                        <div class="form-row form-group" id="JSCheckoutBtn">
+								<div class="col-lg-12 text-center">
+									<input type="button" value="Pay Now" id="PayJSCheckoutBtn" class="btn btn-md btn-yellow label-change">
+								</div>
+							</div>
+							<!--added by senthil 7389 end-->
+
+	                        <div class="payment-block">
+	                        	<div class="form-row form-group text-center radio-group row-change">
+	                        		<div class="col-sm-12 text-center">
+						  		 	<h6 class="heading text-center" id="select_payment_method"><b>Select Payment Method</b></h6>
+								  	<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 payment-modes-list" >
+								  		<div class="radio selected payment-mode box-change" data-value="cc_dc">
+						                	<img class="img-pg" src="images/png_cards.png" />
+						               		<h6 class="heading text-center box-change-child f-size-12"><b>Debit/Credit Card</b></h6>
+						                </div>
+								  	</div>
+							  		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 payment-modes-list">
+							  			 <div class="radio payment-mode box-change" data-value="net_bank">
+						                	<img class="img-pg" src="images/png_netbanking.png" />
+						                	<h6 class="heading text-center box-change-child f-size-12"><b>Net Banking</b></h6>
+						                </div>
+							  		</div>
+								  	<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 payment-modes-list">
+								  		<div class="radio payment-mode box-change" data-value="upi">
+						                	<img class="img-pg" src="images/png_upi.png"/>
+						                	<h6 class="heading text-center box-change-child f-size-12"><b>UPI</b></h6>
+						                </div>
+								  	</div>
+								  	<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 payment-modes-list">
+								  		 <div class="radio payment-mode box-change" data-value="paytm">
+						                	<img class="img-pg" src="images/png_paytm.png" />
+						                	<h6 class="heading text-center box-change-child f-size-12"><b>Paytm Wallet</b></h6>
+						            	</div>
+								  	</div>
+								  </div>
+								</div>
+								<span id="card_block" class="m-t-15">
+									<div class="form-row form-group">
+										<div class="col-sm-12">
+			                                <label for="card_no">
+			                                    Card Number *
+			                                </label>
+			                                <input type="text" name="card_no" class="form-control input-element card-background label-change" id="card_no" placeholder="0000-0000-0000-0000" minlength="19" maxlength="19">
+			      							<span class="error_display" id="card_no_err"></span>
+			                            </div>
+			                        </div>
+			                        <div class="form-row form-group">
+			                            <div class="col-sm-6">
+			                            	<label for="card_validity">
+			                                    Expiry / Validity (MM / YY) *
+			                                </label>
+			                                <input type="text" name="card_validity" id="card_validity" class="form-control input-element label-change" placeholder="MM / YY" minlength="5" maxlength="5">
+			      							<span class="error_display" id="card_validity_err"></span>
+			                            </div>
+			                            <div class="col-sm-6">
+			                            	<label for="cvv_no">
+			                                    CVV *
+			                                </label>
+			                                <input class="form-control input-element label-change" type="password" name="cvv_no" id="cvv_no" placeholder="&#9679;&#9679;&#9679;" class="placeicon" minlength="3" maxlength="3" style="width:70px !important;">
+			      							<span class="error_display" id="cvv_no_err"></span>
+			                            </div>
+									</div>
+								</span>
+
+								<span id="net_bank_block">
+									<div class="form-row form-group text-center radio-group" id="top_banks">
+									</div>
+									<div class="form-row form-group">
+										<div class="col-sm-12">
+											<label for="bank_list">
+				                                Select Other Banks *
+				                            </label>
+				                            <div class="form-holder">
+				                                <select class="form-control select-style" id="bank_list" name="bank_list" data-container="body">
+				                                	<option value="">Select from all banks</option>
+												</select>
+											</div>
+			      							<span class="error_display" id="bank_list_err"></span>
+			      							<span class="warning_display" id="low_success_rate_msg"></span>
+				                        </div>
+									</div>
+								</span>
+
+								<span id="upi_block">
+									<div class="form-row form-group">
+										<div class="col-sm-12">
+											<label for="upi_id">
+				                                Enter Your UPI ID *
+				                            </label>
+				                            <input type="text" name="upi_id" class="form-control input-element label-change" id="upi_id" placeholder="sam@okaxis">
+			      							<span class="error_display" id="upi_id_err"></span>
+				                        </div>
+				                    </div>
+								</span>
+
+								<span id="paytm_block">
+									<div class="form-row form-group paytm_mob_block">
+										<div class="col-sm-12">
+											<label for="paytm_mobile_no">
+				                                Enter Paytm Registered Mobile No *
+				                            </label>
+				                            <input type="text" name="paytm_mobile_no" class="form-control input-element label-change" id="paytm_mobile_no" placeholder="1234567890" maxlength="10">
+		                            		<span class="error_display" id="paytm_mobile_no_err"></span>
+				                        </div>
+				                    </div>
+				                    <div class="form-row form-group paytm_mob_block">
+				                    	<div class="col-sm-12 text-center">
+				                    		<input type="button" value="Proceed" id="send_otp_btn" class="btn btn-md btn-default btn-yellow label-change">
+				                    	</div>
+				                    </div>
+				                    <div class="form-row form-group paytm_otp_block">
+										<div class="col-sm-12">
+											<label for="paytm_otp">
+				                                Enter OTP *
+				                            </label>
+				                            <input type="text" name="paytm_otp" class="form-control input-element label-change" id="paytm_otp" placeholder="" maxlength="10">
+				                            <a href="" id="resend_paytm_otp" class="pull-right">Resend OTP</a>
+		                            		<span class="error_display" id="paytm_otp_err"></span>
+				                        </div>
+				                    </div>
+				                    <div class="form-row form-group paytm_otp_block">
+										<div class="col-sm-12 text-center">
+											<input type="button" value="Verify OTP" id="verify_otp_btn" class="btn btn-md btn-default btn-yellow label-change">
+										</div>
+									</div>
+									<div class="form-row form-group" id="paytm_balance_info">
+			                    	</div>
+			                    	<div class="form-row form-group">
+			                    		<div class="col-md-12">
+				                    		<span class="error_display" id="paytm_gen_err"></span>
+				                    	</div>
+			                    	</div>
+								</span>
+
+								<div class="form-row form-group">
+									<div class="col-lg-12 text-center">
+										<input type="button" value="Proceed to Pay" id="pay_btn" class="btn btn-md btn-default btn-yellow label-change">
+									</div>
+								</div>
+
+	                        </div>
+
+	                        
+	                	</div>
+
+	                	<div class="actions clearfix">
+			                <ul class="list-inline wizard">
+			                    <li class="previous list-inline-item prev-button" id="nav-prev">
+			                        <a href="#" class="">Previous</a>
+			                    </li>
+			                    <li class="next list-inline-item float-right next-button">
+			                        <a href="#" class="" id="next_link">Next</a>
+			                    </li>
+			                </ul>
+		            	</div>
+
+	                </div> <!-- tab-content -->
+		        </div> <!-- end #basicwizard-->
+
+	                <input type="hidden" name="courseTypeID" id="courseTypeID">
+	                <input type="hidden" id="is_express_integration" name="is_express_integration" class="is_express_integration">
+					<input type="hidden" id="is_mobile_web" name="is_mobile_web" class="is_mobile_web">
+					<input type="hidden" id="is_free_course" name="is_free_course" class="is_free_course">
+					<input type="hidden" id="is_nca_reg" name="is_nca_reg" class="is_nca_reg">
+					<input type="hidden" id="employee_id_b64" name="employee_id_b64" class="employee_id_b64">
+					<input type="hidden" id="temp_lead_id" name="temp_lead_id" class="temp_lead_id">
+					<input type="hidden" id="event_id" name="event_id" class="event_id">
+					<input type="hidden" name="require_more_info" id="require_more_info" value="0">
+					<input type="hidden" value="0" name="participant_id" id="participant_id">
+					<input type="hidden" value="" name="transaction_id" id="transaction_id">
+					<input type="hidden" value="" name="pax_hidden_first_name" id="pax_hidden_first_name">
+					<input type="hidden" value="" name="pax_hidden_middle_name" id="pax_hidden_middle_name">
+					<input type="hidden" value="" name="pax_hidden_last_name" id="pax_hidden_last_name">
+					<input type="hidden" value="" name="pax_hidden_email" id="pax_hidden_email">
+					<input type="hidden" value="" name="pax_hidden_phone" id="pax_hidden_phone">
+					<input type="hidden" value="" name="pax_hidden_dist_id" id="pax_hidden_dist_id">
+			    	<input type="hidden" value="" name="pax_hidden_taluka" id="pax_hidden_taluka">
+			    	<input type="hidden" value="" name="pax_hidden_taluka1" id="pax_hidden_taluka1">
+					<input type="hidden" value="" name="pax_hidden_village" id="pax_hidden_village">
+					<input type="hidden" value="" name="city_name_typed" id="city_name_typed" value="0">
+					<input type="hidden" value="" name="taluka_name_typed" id="taluka_name_typed" value="0">
+					<input type="hidden" name="page_query_string" id="page_query_string" value="">
+
+	            </form>
+
+	            <form hidden="hidden" name="pg_form" id="pg_form" method="POST" action="">
+				</form>
+
+	            <form action="pg/pgRedirect.php" method="POST" name="reg_form" id="reg_form" class="hide collapseOne">
+	            	<input type="hidden" name="course_registration_page" id="course_registration_page" value="1"><!-- Added by Sachin - CRFUAT-3488 on 12-09-2018 -->
+					<input type="hidden" name="http_referer" id="http_referer_reg" value=""><!-- Added by Sachin - CRFUAT-4171 on 04-04-2019 -->
+
+					<input type="hidden" name="http_first_landing_page" id="http_first_landing_page_reg" value=""><!-- Added by Senthil - CRFUAT-6637 on 21-03-2022 -->
+
+					<!-- added by senthil 6865 28-6-22 start -->
+					<input type="hidden" name="url_reg_type" id="url_reg_type" value="">
+					<input type="hidden" name="reg_type_status" id="reg_type_status" value="">
+					<!--added by senthil 6865 28-6-22 end -->
+
+					<div id="basicwizard">
+						<div class="steps clearfix">
+							<span id="tab_title">Personal Details</span>
+							<div class="form-row form-group m-t-15">
+		                        <div class="col-sm-6">
+		                            <label for="participant_first_name">
+		                                First Name *
+		                            </label>
+		                            <input type="text" class="form-control input-element" id="participant_first_name" name="first_name" maxlength="100">
+			      					<span class="error_display" id="participant_first_name_err"></span>
+		                        </div>
+		                        <input type="text" class="form-control input-element hide" id="participant_middle_name" name="middle_name" placeholder="Middle Name">
+				      			<span class="error_display hide" id="participant_middle_name_err"></span>
+		                        <div class="col-sm-6">
+		                            <label for="participant_last_name">
+		                                Last Name *
+		                            </label>
+		                            <input type="text" class="form-control input-element" id="participant_last_name" name="last_name" maxlength="100">
+			      					<span class="error_display" id="participant_last_name_err"></span>
+		                        </div>
+		                    </div>
+		                    <div class="form-row form-group">
+		                        <div class="col-sm-6">
+		                            <label for="part_email">
+		                                Email *
+		                            </label>
+		                            <input type="text" class="form-control input-element" id="part_email" name="email" maxlength="100">
+			      					<span class="error_display" id="part_email_err"></span>
+		                        </div>
+
+
+
+		                        <div class="col-sm-6">
+		                            <label for="part_phone">
+		                                Mobile *
+		                            </label>
+		                            <input type="text" class="form-control input-element" id="part_phone" name="phone" maxlength="10">
+			      					<span class="error_display" id="part_phone_err"></span>
+		                        </div>
+		                    </div>
+		                    <div class="form-row form-group">
+		                        <div class="col-sm-12">
+		                        	<label for="part_phone">
+		                                Query *
+		                            </label>
+		                            <textarea type="text" class="form-control text-area" id="query" name="queries" height="50px;" maxlength="255"></textarea>
+	      							<span class="error_display" id="query_err"></span>
+		                        </div>
+		                    </div>
+		                    <div class="form-row form-group">
+		                        <div class="col-sm-12">
+		                        	<button class="btn btn-md btn-default btn-yellow float-right" type="button" id="submit_reg">Register</button>
+		                       	</div>
+		                    </div>
+		                </div>
+		            </div>
+		            <input type="hidden" name="event_id" class="event_id">
+		            <input type="hidden" name="page_query_string" id="page_query_string_two" value="">
+	           	</form>
+	           	<div id="collapseError" class="col-12 hide" style="margin-bottom: 300px; border:none !important;margin-top:20%;">
+					<center><p style="color:#930c0c;font-weight:bold;padding-top: 20px;" id="error_message"></p></center>
+				</div>
+
+				<div class="d-flex justify-content-center m-t-5">
+		            <!-- DigiCert Seal HTML -->
+		            <!-- Place HTML on your site where the seal should appear -->
+		            <!-- <div class="text-center" id="DigiCertClickID_ctATqz9a" style="width:80px;height:50px;" aria-disabled="true">
+					</div> -->
+					<!-- added by jaya 6863 23 May 2022 -->
+					<div class="text-center" id="DigiCertClickID_lo5hjz1V" style="width:80px;height:50px;margin-bottom:20px;" aria-disabled="true">
+					</div>
+		        </div>
+
+				<div class="text-center m-t-5">
+					<span class="footer-copyright">
+			    	© <span id="c_year"></span> | The Art of Living | v5.0.2 <!-- Added by Senthil - CRFUAT-7427 15-02-2013 -->
+				    </span><br/>
+				    <span class="footer-copyright">
+				        <a class="footer-links" data-toggle="modal" href="#myModal2">Privacy statement | </a>
+	                <a class="footer-links" data-toggle="modal" href="#myModal1" id="id_termsuse">Terms of Use | </a>
+	                <a class="footer-links" data-toggle="modal" href="#myModal" id="id_refundpolicy">Refund policy</a>
+				    </span>
+				</div>
+
+	        </div>
+
+	        <div class="col-sm-12 col-lg-3 image-block" style="background-image:url('img/CR_300x800.jpg?v=1') !important;background-repeat:no-repeat;background-size: cover;">
+	            <!-- <center>
+	                <div><img class="course-img" src="img/CR_300x800.jpg" alt=""></div>
+	            </center> -->
+	            <center style="bottom: 5%;position: absolute;margin-left:2%;color: #fff;font-size: 18px;">
+	            	<p>"If you want to make sense it</p>
+	            	<p>has to come from</p>
+	            	<p>Silence"</p>
+	            	<p>- <b>Gurudev</b> Sri Sri Ravi Shankar</p>
+	            </center>
+	        </div>
+		</div>
+
+
+		<!-- Google Tag Manager (noscript) -->
+				<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N2J496"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+				<!-- End Google Tag Manager (noscript) -->
+
+		<!-- <footer class="page-footer font-small blue m-t-15">
+	    	<div>
+			    <span class="footer-copyright text-left footer-left">
+			    	© <span id="c_year"></span> The Art of Living
+			    </span>
+			    <span class="footer-copyright float-right footer-right">
+			        <a class="white-color" data-toggle="modal" href="#myModal2">Privacy statement | </a>
+                <a class="white-color" data-toggle="modal" href="#myModal1" id="id_termsuse">Terms of Use | </a>
+                <a class="white-color" data-toggle="modal" href="#myModal" id="id_refundpolicy">Refund policy</a>
+			    </span>
+	    	</div>
+	    </footer> -->
+
+
+	    <div id="myModal" class="modal" tabindex="-1" role="dialog">
+		  <div class="modal-dialog  modal-lg modal-dialog-scrollable modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title">Refund Policy</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <p>Policy on refund and cancellation/transfer of contribution received for the Art of Living programs:</p>
+                <ol>
+                    <li>Due to any unforeseen circumstances, if the program stands cancelled or rescheduled, the following options are available to the registering participant:</li>
+                    <li>
+                        <ol>
+                            <li>The participant may request for a transfer of registration to another similar Art of Living program to be held with a period of 90 days of earlier registration, by writing to <a href="mailto:transaction.support@in.artofliving.org" target="_blank">transaction.support@in.artofliving.org</a></li>
+                            <li>The participant may request for refund of contribution within 7 days of the start date of the program via email to <a href="mailto:transaction.support@in.artofliving.org" target="_blank">transaction.support@in.artofliving.org</a> for refund. Within 3 working days, refund process shall be initiated. Full amount will be credited back to the account/card used for the program registration.</li>
+                        </ol>
+                    </li>
+                    <li>Under any circumstances other than the above, the contribution amount is Non-Refundable.</li>
+                </ol>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-modal" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div id="myModal1" class="modal" tabindex="-1" role="dialog">
+		  <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title">Terms of Use</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <p>The Art of Living Foundation owns and retains the copyright and all other rights in the contents of this website, including all the text, pictures, photographs, graphics, marks and logos displayed on this site.</p>
+                <p>You are not entitled to reproduce any contents on the site for sale, distribution or commercial gain. No part of this site may be incorporated in any other work, publication or site in any form/format whatsoever. You shall also not be entitled to modify and/or reuse any of the contents on this site for any purpose whatsoever.</p>
+                <p>You may print copies of the information on this site for your personal use and/or store the files on your computer for personal use.</p>
+                <p>The information and contents on this site are for general purposes only and may not be relied upon for any specific purpose. The Art of Living Foundation makes no representation or warranty as regards the accuracy or completeness of any information and/or contents contained in this site.</p>
+                <p>We shall not be liable for the content of websites to which visitors of this website are referred. Links to such websites are provided only to complement information provided on this site.</p>
+                <p>Any personal information that you may provide on this site shall form part of the database of the Art of Living Foundation and may be used by it and/or by any of its affiliated / sister organizations and trusts only for the purpose of its/their activities and objects. We do not sell, trade in or commercially exploit any such personal information. We also do not share any such personal information with any third party other than our affiliated / sister organizations and trusts.</p>
+                <p>We reserve the right to suspend, discontinue or modify any part of this site without notice.
+                </p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-modal" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div id="myModal2" class="modal" tabindex="-1" role="dialog">
+		  <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title">Privacy Statement</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <p>The Art of Living Foundation respects your privacy. You can browse this web site without supplying us with any of your personal details. Any personal information you choose to supply will remain private and will not be supplied to third parties without your permission (unless disclosure is required by law).</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-modal" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div id="myModal_alert" class="modal" tabindex="-1" role="dialog">
+		  <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title">Alert</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <p></p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-modal" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="js/registration.js?version=102"></script>
+		<script type="text/javascript" src="js/jquery.auto-complete.js?version=5"></script>
+		<script type="text/javascript" src="js/validation.js?version=34"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	    <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+	    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&key=AIzaSyCIpljx7a4b0l48otiYoEug0r6DyJnkxFM"></script>
+	    <script src="js/bootstrap-wizard.js"></script>
+		<script type="text/javascript">
+
+		    function getStates(){
+		        var baseUrl = document.location.origin;
+		        //console.log(baseUrl);
+		        var weblink = '';
+		        weblink = baseUrl+"/api.php?action=states&api_key=f3444b53911b0fb2ff216d2b633d66387f685d2a&json=1";
+
+		        $('#state_id').empty();
+		        $('#state_id').append(' <option value="0">Select</option> ');
+		         $.ajax({
+		            url: weblink,
+		            success: function(result){
+		             	//console.log(result);
+		                result=JSON.parse(result);
+		                for(var k = 0; k < result.length; k++){
+		                    $('#state_id').append('<option value="' + result[k].state_id + '">' + result[k].state_name + '</option>');
+
+		                }
+
+		        }});
+
+		    }
+		</script>
+		<!--Added by Prasad - CRFUAT-4692 16-Oct-2019: START -->
+				<script>
+		  // Your web app's Firebase configuration
+		  var firebaseConfig = {
+		    apiKey: "AIzaSyBQs5cH0R1Etj1rtnpMKyBBMvo1svF3QyQ",
+		    authDomain: "vvkicrm-webapp.firebaseapp.com",
+		    databaseURL: "https://vvkicrm-webapp.firebaseio.com",
+		    projectId: "vvkicrm-webapp",
+		    storageBucket: "vvkicrm-webapp.appspot.com",
+		    messagingSenderId: "346269081668",
+		    appId: "1:346269081668:web:a84e776a91ac69f2015c11",
+		    measurementId: "G-VHFDFV34ZH"
+		  };
+		  // Initialize Firebase
+		  firebase.initializeApp(firebaseConfig);
+		  firebase.analytics();
+		  firebase.performance();
+		</script>
+				<!--Added by Prasad - CRFUAT-4692 16-Oct-2019: END -->
+
+		<!-- DigiCert Seal Code -->
+		<!-- Place with DigiCert Seal HTML or with other scripts -->
+	</body>
+
+
+</html>

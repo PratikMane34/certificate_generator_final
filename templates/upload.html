@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Upload Certificate Template</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/application.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <br><br>
+    <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="toggle-switch">
+        <label class="custom-control-label" for="toggle-switch">Toggle this switch for Bulk Certification generation</label>
+    </div>
+    <br><br>
+    <form id="single-form" method="post" enctype="multipart/form-data">
+        <!-- <h1>Generate Certificate</h1> -->
+        <div>
+            <h1 style="color: rgb(5, 5, 41);position: static;">Single Certificate</h1>
+        </div>
+        <input type="hidden" name="toggle_switch" value="off">
+        <label for="user_name">Your Name:</label>
+        <input name="user_name" id="user_id" class="form-control" type="text" placeholder="Default input" required >
+        <label for="certificate_template">Certificate Template:</label>
+        <input type="file" name="certificate_template" id="certificate_template"><br><br>
+        <input class="btn-primary" type="submit" value="Upload">
+        {% if certificate %}
+            <br><br>
+            <img src="{{ url_for('uploaded_file', filename=certificate) }}" alt="Certificate">
+        {% endif %}
+    </form>
+
+    <form id="bulk-form" method="post" enctype="multipart/form-data" style="display: none;">
+        <div>
+            <h1 style="color: rgb(5, 5, 41);position: static;">Bulk Certificate</h1>
+        </div>
+        <input type="hidden" name="toggle_switch" value="on">
+        <label for="text_file">Participant Name:</label>
+        <input type="file" name="file" id="text_file">
+        <!-- <label for="certificate_template">Certificate Template:</label> -->
+        <!-- <input type="file" name="certificate_template" id="certificate_template"><br><br> -->
+        <input id="toggled" class="btn-primary" type="submit" value="Upload">
+        {% if certificate %}
+            <br><br>
+            <img src="{{ url_for('uploaded_file', filename=certificate) }}" alt="Certificate">
+        {% endif %}
+    </form>
+</div>
+
+<style>
+    #single-form, #bulk-form {
+        border: 1px solid black;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+</style>
+
+<script>
+    const toggleSwitch = document.getElementById('toggle-switch');
+    const singleForm = document.getElementById('single-form');
+    const bulkForm = document.getElementById('bulk-form');
+
+    toggleSwitch.addEventListener('change', () => {
+        if (toggleSwitch.checked) {
+            singleForm.style.display = 'none';
+            bulkForm.style.display = 'block';
+        } else {
+            singleForm.style.display = 'block';
+            bulkForm.style.display = 'none';
+        }
+    });
+</script>
+{% endblock %}

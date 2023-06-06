@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Art of Living</title>
+  <style>
+    .container {
+      display: flex;
+    }
+    
+    .block {
+      flex: 1;
+      height: 700px;
+      background-color: #e0e0e0;
+      margin-right: 20px;
+      margin-top: 20px;
+    }
+    
+    .next-button {
+      display: flex;
+      justify-content: flex-end;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+</head>
+<body>
+    <form action="application_form" id="bulk-form" method="post" enctype="multipart/form-data" >
+        <div class="container">
+            <div class="block" style="margin-top: 20px;">
+              
+            </div>
+            <div class="block gx-5">
+              <form class="row g-3 container" style="margin-top: 20px;">
+                <div class="col-md-6 form-floating mb-3">
+                  <input type="text" class="form-control" id="postal_code" name="postal_code" placeholder="Postal Code">
+                  <label for="postal_code">Postal Code</label>
+                </div>
+                <div class="col-md-6 form-floating mb-3">
+                  <input type="text" class="form-control" id="address1" name="address1" placeholder="Address">
+                  <label for="address1" >Address</label>
+                </div>
+                <div class="col-12 form-floating mb-3">
+                  <input type="text" class="form-control" id="address2" name = "address2" placeholder="City/Town/Village">
+                  <label for="address2" >City/Town/Village</label>
+                </div>
+                <div>
+                  <label>
+                    <input type="checkbox" id="agreeCheckbox"> I agree to receive information from The Art of Living and its affiliate organizations through various media, including print and digital, with a facility to opt out.
+                  </label>
+                </div>
+                <div class="col-12 next-button">
+                  <button type="submit" class="btn btn-primary" id="registerButton" disabled>Next</button>
+                </div>
+              </form>
+            </div>
+            <div class="block">
+             
+            </div>
+          </div>
+          <script>
+            const agreeCheckbox = document.getElementById('agreeCheckbox');
+            const registerButton = document.getElementById('registerButton');
+            const secondPage = document.querySelector('.block:nth-child(3)');
+        
+            agreeCheckbox.addEventListener('change', function() {
+              registerButton.disabled = !this.checked;
+            });
+            
+            const dobToggle = document.getElementById('dobToggle');
+            const dobInput = document.getElementById('dob');
+            const ageInput = document.getElementById('age');
+        
+            dobToggle.addEventListener('change', function() {
+              if (this.checked) {
+                dobInput.disabled = false;
+                ageInput.disabled = true;
+              } else {
+                dobInput.disabled = true;
+                ageInput.disabled = false;
+              }
+            });
+            
+          </script>
+    </form>
+  
+</body>
+</html>

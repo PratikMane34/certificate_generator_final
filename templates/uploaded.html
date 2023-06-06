@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Upload Certificate Template</title>
+<style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/application.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content" style="margin-top:30px;">
+    <h1 style="position: relative;color:black;">Generated certificates to download</h1>
+
+    <br>
+    <form id="single-form" method="post" enctype="multipart/form-data">
+      <table>
+        <tr>
+          <th>Certificate</th>
+          
+        </tr>
+        {% for file in content %}
+        <tr>
+          <!-- <td><a href="{{ url_for('static', filename=file) }}">{{ file }}</a></td> -->
+          <td><a href="{{ file }}">{{ file }}</a></td>
+        </tr>
+        {% endfor %}
+      </table>
+    </form>
+    
+</div>
+    
+
+{% endblock %}
